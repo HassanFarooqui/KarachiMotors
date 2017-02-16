@@ -59,6 +59,10 @@
   <ItemGroup>
     <Content Include="ForgetPassword.aspx" />
     <Content Include="LoginPage.aspx" />
+    <Content Include="loginStyle.css" />
+    <Content Include="Media\abc.jpg" />
+    <Content Include="Media\Men.jpg" />
+    <Content Include="Media\Men1.jpg" />
     <Content Include="SignUpFoam.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -94,9 +98,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Media\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

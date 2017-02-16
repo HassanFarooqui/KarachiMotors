@@ -1,0 +1,5 @@
+c:\users\hp\documents\visual studio 2012\Projects\KarachiMotors\KarachiMotorSystem\bin\KarachiMotorSystem.dll
+c:\users\hp\documents\visual studio 2012\Projects\KarachiMotors\KarachiMotorSystem\bin\KarachiMotorSystem.pdb
+c:\users\hp\documents\visual studio 2012\Projects\KarachiMotors\KarachiMotorSystem\obj\Debug\KarachiMotorSystem.csprojResolveAssemblyReference.cache
+c:\users\hp\documents\visual studio 2012\Projects\KarachiMotors\KarachiMotorSystem\obj\Debug\KarachiMotorSystem.dll
+c:\users\hp\documents\visual studio 2012\Projects\KarachiMotors\KarachiMotorSystem\obj\Debug\KarachiMotorSystem.pdb
