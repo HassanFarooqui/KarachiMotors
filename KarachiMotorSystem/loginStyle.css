@@ -24,3 +24,13 @@
         margin-top: -60px;
         margin-bottom: 30px;
 }
+
+#tbx {
+height : 70px;
+width : 500px;
+text-align: center;
+}
+
+#divOfbutton {
+text-align : center;
+}
