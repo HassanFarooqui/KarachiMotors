@@ -11,9 +11,17 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-       
-    </div>
+   
+        <div id="container">
+            <img src="Media/Men.jpg" id="imgl" />
+            <div id="txt">
+                <asp:TextBox runat="server" id="TbxName"/>
+            </div>
+             <div id="Div1">
+                <asp:TextBox runat="server" id="TbxPass"/>
+            </div>
+        </div>
+ 
     </form>
 </body>
 </html>
