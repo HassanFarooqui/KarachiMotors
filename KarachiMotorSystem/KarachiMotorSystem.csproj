@@ -58,9 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ForgetPassword.aspx" />
+    <Content Include="ForgetPasswordStyle.css" />
     <Content Include="LoginPage.aspx" />
     <Content Include="loginStyle.css" />
     <Content Include="Media\abc.jpg" />
+    <Content Include="Media\back.jpg" />
     <Content Include="Media\Men.jpg" />
     <Content Include="Media\Men1.jpg" />
     <Content Include="SignUpFoam.aspx" />
