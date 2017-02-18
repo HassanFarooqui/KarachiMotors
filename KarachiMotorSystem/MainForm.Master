@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainForm.master.cs" Inherits="KarachiMotorSystem.MainForm1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link href="MainFormStyle.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="MainLabel">
+           
+            <table class="auto-style1">
+                <tr>
+                    <td colspan="2"> <asp:Label ID="Label1" Text="Karachi Motors" runat="server" Font-Bold="True" style="text-align: right" Font-Italic="True" Font-Size="X-Large" /></td>
+                </tr>
+                <tr>
+                    <td> <asp:Label ID="Label2" Text="Karachi Certified Used Car Trading System" runat="server" Font-Bold="True" style="text-align: right" Font-Italic="True" Font-Size="X-Large" /></td>
+                </tr>
+            </table>
+           
+        </div>
+        
+          <div  id="container">
+      
+          <table class="auto-style1" style="margin-bottom: 0px">
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button1" runat="server" Height="30px" Text="Button" Width="178px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button2" runat="server" Height="30px" Text="Button" Width="178px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button3" runat="server" Height="30px" Text="Button" Width="178px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button4" runat="server" Height="30px" Text="Button" Width="178px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button5" runat="server" Height="30px" Text="Button" Width="178px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button6" runat="server" Height="30px" Text="Button" Width="178px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button7" runat="server" Height="30px" Text="Button" Width="178px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button8" runat="server" Height="30px" Text="Button" Width="178px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button9" runat="server" Height="30px" Text="Button" Width="178px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button10" runat="server" Height="30px" Text="Button" Width="178px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Button ID="Button11" runat="server" Height="30px" Text="Button" Width="178px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Button ID="Button12" runat="server" Height="30px" Text="Button" Width="178px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+            </tr>
+        </table>
+      
+    </div>
+    </form>
+</body>
+</html>

@@ -57,10 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CustomerMaster.aspx" />
     <Content Include="ForgetPassword.aspx" />
     <Content Include="ForgetPasswordStyle.css" />
     <Content Include="LoginPage.aspx" />
     <Content Include="loginStyle.css" />
+    <Content Include="MainFormStyle.css" />
     <Content Include="Media\abc.jpg" />
     <Content Include="Media\back.jpg" />
     <Content Include="Media\Men.jpg" />
@@ -70,6 +72,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerMaster.aspx.cs">
+      <DependentUpon>CustomerMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerMaster.aspx.designer.cs">
+      <DependentUpon>CustomerMaster.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ForgetPassword.aspx.cs">
       <DependentUpon>ForgetPassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -84,6 +93,13 @@
     <Compile Include="LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MainForm.Master.cs">
+      <DependentUpon>MainForm.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainForm.Master.designer.cs">
+      <DependentUpon>MainForm.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUpFoam.aspx.cs">
       <DependentUpon>SignUpFoam.aspx</DependentUpon>
@@ -94,6 +110,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MainForm.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

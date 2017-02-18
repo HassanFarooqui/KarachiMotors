@@ -50,7 +50,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:TextBox ID="TextBox4" runat="server" Height="41px" Width="366px" PlaceHolder="Password"></asp:TextBox>
+                    <asp:TextBox ID="TextBox4" runat="server" Height="41px" Width="366px" PlaceHolder="Confirm Password"></asp:TextBox>
                 </td>
             </tr>
             <tr>
