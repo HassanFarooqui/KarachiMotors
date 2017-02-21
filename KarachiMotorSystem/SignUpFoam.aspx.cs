@@ -38,7 +38,10 @@ namespace KarachiMotorSystem
                 sqlC.Open();
                 mycommand.ExecuteNonQuery();
                 sqlC.Close();
-                Response.Write("data save OK");
+                FlagsVariables.accountCreate = true;
+                Response.Redirect("LoginPage.aspx");
+               
+               
 
             }
             catch (Exception ex)

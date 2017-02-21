@@ -11,9 +11,12 @@ namespace KarachiMotorSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (FlagsVariables.accountCreate)
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Insert is successfull')", true);
+                FlagsVariables.accountCreate = false;
+            }
         }
-
         protected void SignUp(object sender, EventArgs e)
         {
             Response.Redirect("SignUpFoam.aspx");

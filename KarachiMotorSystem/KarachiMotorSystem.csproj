@@ -80,6 +80,7 @@
     <Compile Include="CustomerMaster.aspx.designer.cs">
       <DependentUpon>CustomerMaster.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FlagsVariables.cs" />
     <Compile Include="ForgetPassword.aspx.cs">
       <DependentUpon>ForgetPassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
