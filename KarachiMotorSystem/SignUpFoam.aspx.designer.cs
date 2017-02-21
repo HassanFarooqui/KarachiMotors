@@ -40,85 +40,85 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.TextBox TbxFirstName;
         
         /// <summary>
-        /// TbxFirstName0 control.
+        /// TxtSurname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbxFirstName0;
+        protected global::System.Web.UI.WebControls.TextBox TxtSurname;
         
         /// <summary>
-        /// TbxFirstName1 control.
+        /// Txtpassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbxFirstName1;
+        protected global::System.Web.UI.WebControls.TextBox Txtpassword;
         
         /// <summary>
-        /// TbxFirstName2 control.
+        /// TxtConformpassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbxFirstName2;
+        protected global::System.Web.UI.WebControls.TextBox TxtConformpassword;
         
         /// <summary>
-        /// TbxFirstName3 control.
+        /// TxtEmailAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbxFirstName3;
+        protected global::System.Web.UI.WebControls.TextBox TxtEmailAddress;
         
         /// <summary>
-        /// TbxFirstName4 control.
+        /// TxthomeAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbxFirstName4;
+        protected global::System.Web.UI.WebControls.TextBox TxthomeAddress;
         
         /// <summary>
-        /// TbxFirstName5 control.
+        /// Txtphoneno control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbxFirstName5;
+        protected global::System.Web.UI.WebControls.TextBox Txtphoneno;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// DropDownDay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownDay;
         
         /// <summary>
-        /// DropDownList2 control.
+        /// DropDownMonth control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownMonth;
         
         /// <summary>
-        /// DropDownList3 control.
+        /// DropDownYear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownYear;
         
         /// <summary>
         /// LblGender control.
@@ -130,13 +130,13 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Label LblGender;
         
         /// <summary>
-        /// RadioButtonList1 control.
+        /// RdBtngender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
+        protected global::System.Web.UI.WebControls.RadioButtonList RdBtngender;
         
         /// <summary>
         /// btnCreateAccount control.

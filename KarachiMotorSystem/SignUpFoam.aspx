@@ -63,30 +63,30 @@
                     <asp:TextBox runat="server" ID="TbxFirstName" Height="31px" Width="230px" PlaceHolder="First Name"/>
                 </td>
                 <td> 
-                    <asp:TextBox runat="server" ID="TbxFirstName0" Height="31px" Width="230px" PlaceHolder="Surname"/>
+                    <asp:TextBox runat="server" ID="TxtSurname" Height="31px" Width="230px" PlaceHolder="Surname"/>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style6"> 
-                    <asp:TextBox runat="server" ID="TbxFirstName1" Height="31px" Width="230px" PlaceHolder="Password"/>
+                    <asp:TextBox runat="server" ID="Txtpassword" Height="31px" Width="230px" PlaceHolder="Password"/>
                 </td>
                 <td class="auto-style7"> 
-                    <asp:TextBox runat="server" ID="TbxFirstName2" Height="31px" Width="230px" PlaceHolder="Confirm Password"/>
+                    <asp:TextBox runat="server" ID="TxtConformpassword" Height="31px" Width="230px" PlaceHolder="Confirm Password"/>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2" colspan="2"> 
-                    <asp:TextBox runat="server" ID="TbxFirstName3" Height="31px" style="margin-left: 0px" Width="564px" PlaceHolder="Email Address"/>
+                    <asp:TextBox runat="server" ID="TxtEmailAddress" Height="31px" style="margin-left: 0px" Width="564px" PlaceHolder="Email Address"/>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2" colspan="2"> 
-                    <asp:TextBox runat="server" ID="TbxFirstName4" Height="31px" Width="564px" PlaceHolder="Home Address "/>
+                    <asp:TextBox runat="server" ID="TxthomeAddress" Height="31px" Width="564px" PlaceHolder="Home Address "/>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style4" colspan="2"> 
-                    <asp:TextBox runat="server" ID="TbxFirstName5" Height="31px" Width="564px" PlaceHolder="Cell Number"/>
+                    <asp:TextBox runat="server" ID="Txtphoneno" Height="31px" Width="564px" PlaceHolder="Cell Number"/>
                 </td>
             </tr>
             <tr>
@@ -99,7 +99,7 @@
                         </tr>
                         <tr>
                             <td class="auto-style10">
-                                <asp:DropDownList ID="DropDownList1" runat="server" Height="25px" Width="89px">
+                                <asp:DropDownList ID="DropDownDay" runat="server" Height="25px" Width="89px">
                                     <asp:ListItem>Day</asp:ListItem>
                                     <asp:ListItem>1</asp:ListItem>
                                     <asp:ListItem>2</asp:ListItem>
@@ -123,7 +123,7 @@
 
                             </td>
                             <td class="auto-style11">
-                                <asp:DropDownList ID="DropDownList2" runat="server" Height="25px" Width="89px">
+                                <asp:DropDownList ID="DropDownMonth" runat="server" Height="25px" Width="89px">
                                     <asp:ListItem>Month</asp:ListItem>
                                     <asp:ListItem>Jan</asp:ListItem>
                                     <asp:ListItem>Feb</asp:ListItem>
@@ -142,7 +142,7 @@
 
                             </td>
                             <td class="auto-style12">
-                                <asp:DropDownList ID="DropDownList3" runat="server" Height="25px" Width="89px">
+                                <asp:DropDownList ID="DropDownYear" runat="server" Height="25px" Width="89px">
                                     <asp:ListItem>Year</asp:ListItem>
                                     <asp:ListItem>2017</asp:ListItem>
                                     <asp:ListItem>2016</asp:ListItem>
@@ -177,7 +177,7 @@
                         </tr>
                         <tr>
                             <td class="auto-style14">
-                                <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal" style="text-align: left" Width="227px">
+                                <asp:RadioButtonList ID="RdBtngender" runat="server" RepeatDirection="Horizontal" style="text-align: left" Width="227px" OnSelectedIndexChanged="mailRadioButton_SelectedIndexChanged">
                                     <asp:ListItem>  Male</asp:ListItem>
                                     <asp:ListItem>Female</asp:ListItem>
                                     <asp:ListItem>Other</asp:ListItem>
@@ -189,7 +189,7 @@
             </tr>
             <tr>
                 <td class="auto-style4" colspan="2">
-                    <asp:Button Text="Create Account" runat="server" ID="btnCreateAccount" Height="35px" Width="564px" />
+                    <asp:Button Text="Create Account" runat="server" ID="btnCreateAccount" Height="35px" Width="564px" OnClick="CreateAccount" />
                 </td>
             </tr>
         </table>

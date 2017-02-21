@@ -21,10 +21,10 @@
                 <asp:TextBox runat="server" id="TbxPass"  Height= "40px" Width="300px" PlaceHolder="Password" />
             </div>
             <div id="divOfbutton">
-                <asp:Button Text="SignUp" runat="server" ID="btnSubmit"  Height="35px" Width="150px" Font-Bold="True"/>
+                <asp:Button Text="SignUp" runat="server" ID="btnSubmit"  Height="35px" Width="150px" Font-Bold="True" OnClick="SignUp"/>
                 <asp:Button Text="LogIn" runat="server" ID="BtnLogIn" Height="35px" Width="150px" Font-Bold="True"/>
             </div>
-            <a href="#"> <asp:Label Text="Forget Password" runat="server" />  </a>
+             <a href="ForgetPassword.aspx">Forget Password</a>
         </div>
     </form>
 </body>

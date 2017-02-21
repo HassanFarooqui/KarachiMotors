@@ -13,5 +13,10 @@ namespace KarachiMotorSystem
         {
 
         }
+
+        protected void SignUp(object sender, EventArgs e)
+        {
+            Response.Redirect("SignUpFoam.aspx");
+        }
     }
 }

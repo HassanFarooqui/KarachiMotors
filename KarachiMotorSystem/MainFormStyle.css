@@ -10,8 +10,8 @@
        background-color : rgba(81, 250, 105, 0.7);
        margin-top: 20px;   
        margin-left : 20px;
-    margin-right: auto;
-    margin-bottom: 0;
+    /*margin-right: auto;
+    margin-bottom: 0;*/
 }
 
 #MainLabel {
