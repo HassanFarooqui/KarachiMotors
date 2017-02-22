@@ -22,12 +22,15 @@
 }
 
 #ContentPage {
-    height : 540px;
-    width : 1128px;
-    margin-top : -537px;
-    margin-left : 220px;
-    background-color : rgba(44, 147, 245, 0.5);
+    height: 540px;
+    width: 1128px;
+    margin-top: -537px;
+    margin-left: 220px;
+    background-color: rgba(44, 147, 245, 0.5);
     border-radius: 5px;
-    text-align : center;
-            
+    text-align: center;
 }
+
+
+
+

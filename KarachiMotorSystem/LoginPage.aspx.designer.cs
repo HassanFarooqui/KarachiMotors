@@ -22,13 +22,13 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// TbxName control.
+        /// TbxEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbxName;
+        protected global::System.Web.UI.WebControls.TextBox TbxEmail;
         
         /// <summary>
         /// TbxPass control.

@@ -13,5 +13,20 @@ namespace KarachiMotorSystem
         {
 
         }
+
+        protected void CustomerMaster(object sender, EventArgs e)
+        {
+            Response.Redirect("CustomerMaster.aspx"); 
+        }
+
+        protected void Home(object sender, EventArgs e)
+        {
+            Response.Redirect("HomePage.aspx");
+        }
+
+        protected void StockMasterClick(object sender, EventArgs e)
+        {
+            Response.Redirect("StockMaster.aspx");
+        }
     }
 }

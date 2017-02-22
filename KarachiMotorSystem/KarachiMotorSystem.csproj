@@ -60,6 +60,7 @@
     <Content Include="CustomerMaster.aspx" />
     <Content Include="ForgetPassword.aspx" />
     <Content Include="ForgetPasswordStyle.css" />
+    <Content Include="HomePage.aspx" />
     <Content Include="LoginPage.aspx" />
     <Content Include="loginStyle.css" />
     <Content Include="MainFormStyle.css" />
@@ -69,6 +70,7 @@
     <Content Include="Media\Men1.jpg" />
     <Content Include="SignUpFoam.aspx" />
     <Content Include="SignUpStyle.css" />
+    <Content Include="StockMaster.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +89,13 @@
     </Compile>
     <Compile Include="ForgetPassword.aspx.designer.cs">
       <DependentUpon>ForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
@@ -109,6 +118,13 @@
     </Compile>
     <Compile Include="SignUpFoam.aspx.designer.cs">
       <DependentUpon>SignUpFoam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockMaster.aspx.cs">
+      <DependentUpon>StockMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockMaster.aspx.designer.cs">
+      <DependentUpon>StockMaster.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

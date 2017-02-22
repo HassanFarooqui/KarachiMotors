@@ -60,7 +60,8 @@
             </tr>
             <tr>
                 <td class="auto-style4"> 
-                    <asp:TextBox runat="server" ID="TbxFirstName" Height="31px" Width="230px" PlaceHolder="First Name"/>
+                    <asp:TextBox runat="server" ID="TbxFirstName" Height="31px" Width="230px" PlaceHolder="First Name" ControlToValidate="TbxFirstName" /><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" ControlToValidate="TbxFirstName"></asp:RequiredFieldValidator>
+
                 </td>
                 <td> 
                     <asp:TextBox runat="server" ID="TxtSurname" Height="31px" Width="230px" PlaceHolder="Surname"/>

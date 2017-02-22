@@ -40,31 +40,31 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Button1 control.
+        /// BtnHome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button BtnHome;
         
         /// <summary>
-        /// Button2 control.
+        /// BtnCustomerMaster control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button BtnCustomerMaster;
         
         /// <summary>
-        /// Button3 control.
+        /// BtnStockMaster control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
+        protected global::System.Web.UI.WebControls.Button BtnStockMaster;
         
         /// <summary>
         /// Button4 control.
