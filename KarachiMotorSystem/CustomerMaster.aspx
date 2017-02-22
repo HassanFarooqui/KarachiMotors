@@ -1,3 +1,283 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainForm.Master" AutoEventWireup="true" CodeBehind="CustomerMaster.aspx.cs" Inherits="KarachiMotorSystem.CustomerMaster" %>
 
+<asp:Content ID="Content1" ContentPlaceHolderID="CPH" runat="server" >
+    <div id ="ContentPage" >
+        
+        <table class="auto-style1" style="width: 98%">
+            <tr>
+                <td colspan="14">
+                    <asp:Label Text="Customer Master" runat="server" Font-Bold="True" Font-Size="Larger" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 81px">
+                    <asp:Button ID="BtnSave" runat="server" Text="Save" Width="80px" />
+                </td>
+                <td>
+                    <asp:Button ID="BtnUpdate" runat="server" Text="Update" Width="80px" />
+                </td>
+                <td>
+                    <asp:Button ID="BtnDelete" runat="server" Text="Delete" Width="80px" />
+                </td>
+                <td>
+                    <asp:Button ID="BtnPrint" runat="server" Text="Print" Width="80px" />
+                </td>
+                <td style="width: 49px">&nbsp;</td>
+                <td>
+                    <asp:Button ID="BtnFirst" runat="server" Text="First" Width="80px" />
+                </td>
+                <td>
+                    <asp:Button ID="BtnPrevious" runat="server" Text="Previous" Width="80px" />
+                </td>
+                <td>
+                    <asp:Button ID="BtnNext" runat="server" Text="Next" Width="80px" />
+                </td>
+                <td>
+                    <asp:Button ID="BtnLast" runat="server" Text="Last" Width="80px" />
+                </td>
+                <td style="width: 49px">&nbsp;</td>
+                <td>
+                    <asp:Button ID="BtnSearch" runat="server" Text="Search" Width="80px" />
+                </td>
+                <td>
+                    <asp:Button ID="BtnViewAll" runat="server" Text="ViewAll" Width="80px" />
+                </td>
+                <td>
+                    <asp:Button ID="BtnClear" runat="server" Text="Clear" Width="80px" />
+                </td>
+                <td>
+                    <asp:Button ID="BtnBack" runat="server" Text="Back" Width="80px" />
+                </td>
+            </tr>
+            </table>
+
+
+
+
+
+
+        <table class="auto-style1" style="width: 98%">
+            <tr>
+                <td>
+                    <asp:Label ID="Label5" runat="server" Text="Search Order" Font-Bold="True"></asp:Label>
+                </td>
+                <td>
+                    <asp:Label ID="Label6" runat="server" Text="Customer Id:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="Label7" runat="server" Text="C.Name:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="Label8" runat="server" Text="C.N.I.C:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="Label9" runat="server" Text="Cell#:"></asp:Label>
+                </td>
+                <td style="width: 90px">
+                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+
+
+
+
+
+           
+        <table class="auto-style1" style="width: 97%">
+            <tr>
+                <td colspan="9">
+                    <asp:Label ID="Label10" runat="server" Font-Bold="True" Text="Personal Information"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label14" runat="server" Text="Customer Id:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TbxCustomerId" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="Label15" runat="server" Text="Customer Name:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TbxCustomerName" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="Label16" runat="server" Text="Father Name:"></asp:Label>
+                </td>
+                <td>
+                    <asp:DropDownList ID="DdnListFatherName" runat="server" Height="23px" style="margin-left: 0px" Width="137px">
+                        <asp:ListItem>Select Item</asp:ListItem>
+                        <asp:ListItem>S/O</asp:ListItem>
+                        <asp:ListItem>D/O</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td>
+                    <asp:TextBox ID="TbxFatherName" runat="server"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label17" runat="server" Text="D.O.B:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TbxDOB" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="Label18" runat="server" Text="C.N.I.C:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TbxCNIC" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="Label19" runat="server" Text="HPA Sales:"></asp:Label>
+                </td>
+                <td colspan="2">
+                    <asp:TextBox ID="TbxHPASales" runat="server" Width="227px"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="9">
+                    <asp:Label ID="Label11" runat="server" Font-Bold="True" Text="Contact Information"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label20" runat="server" Text="Residential #:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TbxResidentialNo" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="Label21" runat="server" Text="Office #:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TbxOfficeNo" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="Label22" runat="server" Text="Cell #:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TbxCellNo1" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:TextBox ID="TbxCellNo2" runat="server"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label23" runat="server" Text="Driver #:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TbxDriverNo" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="Label24" runat="server" Text="Email Address:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TbxEmailAddress" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="Label25" runat="server" Text="H Address:"></asp:Label>
+                </td>
+                <td colspan="2">
+                    <asp:TextBox ID="TbxHomeAddress" runat="server" Width="227px"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="9">
+                    <asp:Label ID="Label12" runat="server" Font-Bold="True" Text="Offical  Information"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 26px">
+                    <asp:Label ID="Label26" runat="server" Text="N.T.N #:"></asp:Label>
+                </td>
+                <td style="height: 26px">
+                    <asp:TextBox ID="TbxNTNNo" runat="server"></asp:TextBox>
+                </td>
+                <td style="height: 26px">
+                    <asp:Label ID="Label27" runat="server" Text="Customer Type:"></asp:Label>
+                </td>
+                <td style="height: 26px">
+                    <asp:DropDownList ID="DdnListCustomerType" runat="server" Height="23px" style="margin-left: 0px" Width="137px">
+                        <asp:ListItem>Select Item</asp:ListItem>
+                        <asp:ListItem>Cash</asp:ListItem>
+                        <asp:ListItem>Credit</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td style="height: 26px">
+                    <asp:Label ID="Label28" runat="server" Text="Recovery By:"></asp:Label>
+                </td>
+                <td colspan="2" style="height: 26px">
+                    <asp:TextBox ID="TbxRecdoveryBy" runat="server" Width="227px"></asp:TextBox>
+                </td>
+                <td style="height: 26px"></td>
+                <td style="height: 26px"></td>
+            </tr>
+            <tr>
+                <td colspan="9">
+                    <asp:Label ID="Label13" runat="server" Font-Bold="True" Text="Other Information"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label29" runat="server" Text="Inserted By:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TbxInsertedBy" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox26" runat="server"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="Label30" runat="server" Text="Updated By:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TbxUpdatedBy" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox25" runat="server"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+      
+
+
+
+      
+
+
+
+
+
+           
+    </div>
+</asp:Content>
 

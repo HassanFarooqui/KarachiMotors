@@ -100,11 +100,12 @@
       
     </div>
 
-        <div id ="ContentPage" >
 
-
-
-        </div>
+           <asp:ContentPlaceHolder runat="server" ID="CPH">
+                <div id ="ContentPage" >
+                   Page is Under Construction
+                </div>
+           </asp:ContentPlaceHolder>
     </form>
 </body>
 </html>
