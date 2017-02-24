@@ -30,32 +30,32 @@
             </tr>
             <tr>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server" Height="41px" Width="366px" PlaceHolder="Email"></asp:TextBox>
+                    <asp:TextBox ID="TbxEmail" runat="server" Height="41px" Width="366px" PlaceHolder="Email"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:TextBox ID="TextBox2" runat="server" Height="41px" Width="366px" PlaceHolder="Cell Number"></asp:TextBox>
+                    <asp:TextBox ID="TbxCellNo" runat="server" Height="41px" Width="366px" PlaceHolder="Cell Number"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button1" runat="server" Height="41px" Text="Check " Width="300px" />
+                    <asp:Button ID="BtnCheck" runat="server" Height="41px" Text="Check " Width="300px" OnClick="btncheck"  />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:TextBox ID="TextBox3" runat="server" Height="41px" Width="366px" PlaceHolder="Password"></asp:TextBox>
+                    <asp:TextBox ID="TbxNewPassword" runat="server" Height="41px" Width="366px" PlaceHolder="Password"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:TextBox ID="TextBox4" runat="server" Height="41px" Width="366px" PlaceHolder="Confirm Password"></asp:TextBox>
+                    <asp:TextBox ID="TbxConformPassword" runat="server" Height="41px" Width="366px" PlaceHolder="Confirm Password"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Button ID="Button2" runat="server" Height="41px" Text="Submit" Width="300px" />
+                    <asp:Button ID="BtnSumit" runat="server" Height="41px" Text="Submit" Width="300px" OnClick="btnSubmit" />
                 </td>
             </tr>
         </table>
