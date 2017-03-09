@@ -3,6 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="CPH" runat="server" >
     <div id ="ContentPage" >
         
+        <br />
+        
         <table class="auto-style1" style="width: 98%">
             <tr>
                 <td colspan="14">
@@ -264,20 +266,33 @@
                     <asp:TextBox ID="TextBox25" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+               <td>
+                
+             </td>
+            
             </tr>
+
         </table>
-      
 
+      <div style="width: 100%; height: 215px; overflow-y: scroll">
+        <asp:GridView ID="GirdViewdiv" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" CssClass="custom-tab" DataSourceID="SqlDataSource1" Height="50px">
+            <Columns>
+                <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
+                <asp:BoundField DataField="firstName" HeaderText="firstName" SortExpression="firstName" />
+                <asp:BoundField DataField="surName" HeaderText="surName" SortExpression="surName" />
+                <asp:BoundField DataField="Password" HeaderText="Password" SortExpression="Password" />
+                <asp:BoundField DataField="emailAddress" HeaderText="emailAddress" SortExpression="emailAddress" />
+                <asp:BoundField DataField="homeAddress" HeaderText="homeAddress" SortExpression="homeAddress" />
+                <asp:BoundField DataField="CellNumber" HeaderText="CellNumber" SortExpression="CellNumber" />
+                <asp:BoundField DataField="dob" HeaderText="dob" SortExpression="dob" />
+                <asp:BoundField DataField="gender" HeaderText="gender" SortExpression="gender" />
+            </Columns>
+         
+        </asp:GridView>
+      </div>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KarachiMotorsConnectionString %>" SelectCommand="SELECT * FROM [UserAccountDetails]"></asp:SqlDataSource>
 
-
-      
-
-
-
-
-
-           
-    </div>
+  </div>
+    
 </asp:Content>
 
