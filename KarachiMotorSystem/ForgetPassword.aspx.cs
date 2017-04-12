@@ -68,13 +68,12 @@ namespace KarachiMotorSystem
             string conformPass = TbxConformPassword.Text;
             string email = TbxEmail.Text;
             string cellNo = TbxCellNo.Text;
-            if (newPass != "" && conformPass != ""){
-
+            if (newPass != "" && conformPass != "")
+            {
                 ConnectionStringClass connectionString = new ConnectionStringClass();
                 SqlConnection sc = connectionString.getDatabaseConnection();
                 string Query = "Update UserAccountDetails Set Password = '"+newPass+"' where emailAddress = '" + email + "' and CellNumber = '" + cellNo + "'";
                 SqlCommand updateCommand = new SqlCommand(Query, sc);
-
                 try
                 {
                     sc.Open();
@@ -83,14 +82,10 @@ namespace KarachiMotorSystem
                     Response.Redirect("LoginPage.aspx");
                 }
                 catch (Exception ex)
-
                 {
-                    Response.Write(ex);
-                    
+                    Response.Write(ex);          
                 }
             }
         }
-
-       
     }
 }

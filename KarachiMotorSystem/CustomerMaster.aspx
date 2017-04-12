@@ -13,10 +13,10 @@
             </tr>
             <tr>
                 <td style="width: 81px">
-                    <asp:Button ID="BtnSave" runat="server" Text="Save" Width="80px" />
+                    <asp:Button ID="btnSave" runat="server" Text="Save" Width="80px" OnClick="BtnSave" />
                 </td>
                 <td>
-                    <asp:Button ID="BtnUpdate" runat="server" Text="Update" Width="80px" />
+                    <asp:Button ID="BtnUpdateb" runat="server" Text="Update" Width="80px" OnClick="BtnUpdate" />
                 </td>
                 <td>
                     <asp:Button ID="BtnDelete" runat="server" Text="Delete" Width="80px" />
@@ -39,7 +39,7 @@
                 </td>
                 <td style="width: 49px">&nbsp;</td>
                 <td>
-                    <asp:Button ID="BtnSearch" runat="server" Text="Search" Width="80px" />
+                    <asp:Button ID="BtnSearch" runat="server" Text="Search" Width="80px" OnClick="BtnSearch_Click" />
                 </td>
                 <td>
                     <asp:Button ID="BtnViewAll" runat="server" Text="ViewAll" Width="80px" />
@@ -67,7 +67,7 @@
                     <asp:Label ID="Label6" runat="server" Text="Customer Id:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TbxSearchCustomerID" runat="server"></asp:TextBox>
                 </td>
                 <td>
                     <asp:Label ID="Label7" runat="server" Text="C.Name:"></asp:Label>
@@ -89,16 +89,6 @@
                 </td>
             </tr>
         </table>
-
-
-
-
-
-
-
-
-
-
            
         <table class="auto-style1" style="width: 97%">
             <tr>

@@ -13,31 +13,31 @@ namespace KarachiMotorSystem {
     public partial class CustomerMaster {
         
         /// <summary>
-        /// BtnSave control.
+        /// btnSave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSave;
+        protected global::System.Web.UI.WebControls.Button btnSave;
         
         /// <summary>
-        /// BtnUpdate control.
+        /// BtnUpdateb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnUpdate;
+        protected global::System.Web.UI.WebControls.Button BtnUpdateb;
         
         /// <summary>
-        /// BtnDelete control.
+        /// BtnDeleteB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnDelete;
+        protected global::System.Web.UI.WebControls.Button BtnDeleteB;
         
         /// <summary>
         /// BtnPrint control.
@@ -139,13 +139,13 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// TextBox1 control.
+        /// TbxSearchCustomerID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox TbxSearchCustomerID;
         
         /// <summary>
         /// Label7 control.
