@@ -103,22 +103,22 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Button BtnViewAll;
         
         /// <summary>
-        /// BtnClear control.
+        /// BtnSClear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnClear;
+        protected global::System.Web.UI.WebControls.Button BtnSClear;
         
         /// <summary>
-        /// BtnBack control.
+        /// BtnSBack control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnBack;
+        protected global::System.Web.UI.WebControls.Button BtnSBack;
         
         /// <summary>
         /// Label5 control.
@@ -391,15 +391,6 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.TextBox TbxCellNo1;
         
         /// <summary>
-        /// TbxCellNo2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbxCellNo2;
-        
-        /// <summary>
         /// Label23 control.
         /// </summary>
         /// <remarks>
@@ -544,15 +535,6 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.TextBox TbxInsertedBy;
         
         /// <summary>
-        /// TextBox26 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox26;
-        
-        /// <summary>
         /// Label30 control.
         /// </summary>
         /// <remarks>
@@ -569,15 +551,6 @@ namespace KarachiMotorSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TbxUpdatedBy;
-        
-        /// <summary>
-        /// TextBox25 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox25;
         
         /// <summary>
         /// GirdViewdiv control.

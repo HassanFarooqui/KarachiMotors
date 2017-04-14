@@ -45,11 +45,10 @@ table#CPH_GirdViewdiv tr:nth-child(even) {
 
 td {
     word-break: break-all;
+    text-align: center;
 }
 
 .custom-tab {
-    height: 50px;
     border-collapse: collapse;
-    width: 100%;
     table-layout: fixed;
 }

@@ -19,7 +19,7 @@
                     <asp:Button ID="BtnUpdateb" runat="server" Text="Update" Width="80px" OnClick="BtnUpdate" />
                 </td>
                 <td>
-                    <asp:Button ID="BtnDelete" runat="server" Text="Delete" Width="80px" />
+                    <asp:Button ID="BtnDeleteB" runat="server" Text="Delete" Width="80px" OnClick="BtnDelete" />
                 </td>
                 <td>
                     <asp:Button ID="BtnPrint" runat="server" Text="Print" Width="80px" />
@@ -45,10 +45,10 @@
                     <asp:Button ID="BtnViewAll" runat="server" Text="ViewAll" Width="80px" />
                 </td>
                 <td>
-                    <asp:Button ID="BtnClear" runat="server" Text="Clear" Width="80px" />
+                    <asp:Button ID="BtnSClear" runat="server" Text="Clear" Width="80px" OnClick="BtnClear" />
                 </td>
                 <td>
-                    <asp:Button ID="BtnBack" runat="server" Text="Back" Width="80px" />
+                    <asp:Button ID="BtnSBack" runat="server" Text="Back" Width="80px" OnClick="BtnBack" />
                 </td>
             </tr>
             </table>
@@ -148,7 +148,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td colspan="9">
+                <td colspan="9" style="height: 23px">
                     <asp:Label ID="Label11" runat="server" Font-Bold="True" Text="Contact Information"></asp:Label>
                 </td>
             </tr>
@@ -168,11 +168,8 @@
                 <td>
                     <asp:Label ID="Label22" runat="server" Text="Cell #:"></asp:Label>
                 </td>
-                <td>
-                    <asp:TextBox ID="TbxCellNo1" runat="server"></asp:TextBox>
-                </td>
-                <td>
-                    <asp:TextBox ID="TbxCellNo2" runat="server"></asp:TextBox>
+                <td colspan="2">
+                    <asp:TextBox ID="TbxCellNo1" runat="server" Width="227px"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -240,20 +237,17 @@
                     <asp:Label ID="Label29" runat="server" Text="Inserted By:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TbxInsertedBy" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TbxInsertedBy" runat="server" Width="128px"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextBox26" runat="server"></asp:TextBox>
-                </td>
-                <td>&nbsp;</td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
                 <td>
                     <asp:Label ID="Label30" runat="server" Text="Updated By:"></asp:Label>
                 </td>
-                <td>
-                    <asp:TextBox ID="TbxUpdatedBy" runat="server"></asp:TextBox>
-                </td>
-                <td>
-                    <asp:TextBox ID="TextBox25" runat="server"></asp:TextBox>
+                <td colspan="2">
+                    <asp:TextBox ID="TbxUpdatedBy" runat="server" Width="227px"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                <td>
