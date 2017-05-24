@@ -18,8 +18,8 @@ namespace KarachiMotorSystem
 
         protected void BtnSave(object sender, EventArgs e)
         {
-            ConnectionStringClass myConnection = new ConnectionStringClass();
-            Sqlconnection sqlC = myConnection.getDatabaseConnection();
+          //  ConnectionStringClass myConnection = new ConnectionStringClass();
+            //Sqlconnection sqlC = myConnection.getDatabaseConnection();
         }
     }
 }
