@@ -13,7 +13,11 @@ namespace KarachiMotorSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                string current = Convert.ToString(this.getCustomerID());
+                TbxCustomerId.Text = current;
+            }
         }
 
         protected void BtnSave(object sender, EventArgs e)
@@ -61,7 +65,7 @@ namespace KarachiMotorSystem
 
         protected void BtnUpdate(object sender, EventArgs e)
         {
-            string customer =        TbxCustomerId.Text;
+            string customerId =        TbxCustomerId.Text;
             string customerName =    TbxCustomerName.Text;
             string fatherName =      TbxFatherName.Text;
             string dOB =             TbxDOB.Text;
@@ -82,8 +86,7 @@ namespace KarachiMotorSystem
             string DOB = TbxDOB.Text;
             ConnectionStringClass myConnection = new ConnectionStringClass();
             SqlConnection sqlC = myConnection.getDatabaseConnection();
-            string insertQuery = "Update CustomerMaster (customerID,CustomerName, fatherName, cNIC, hPASales, residentialNo, officeNo, cellNo1, driverNo, emailAddress, homeAddress, nTNNo, customerType, recoveryBy, insertedBy, UpdatedBy, DOB) Values ( '" + customer + "','" + customerName + "', '" + fatherName + "', '" + cNIC + "', '" + hPASales + "', '" + residentialNo + "', '" + officeNo + "', '" + cellNo1 + "', '" + driverNo + "', '" + emailAddress + "','" + homeAddress + "', '" + nTNNo + "', '" + customerType + "', '" + insertedBy + "', '" + UpdatedBy + "' ,'"
-            + UpdatedBy + "', '"+ TbxDOB +"')";
+            string insertQuery = "Update CustomerMaster SET customerID = '" + customerId + "' , CustomerName = '" + customerName + "', fatherName = '" + fatherName + "' , cNIC = '" + cNIC + "', hPASales = '" + hPASales + "', residentialNo =  '" + residentialNo + "', officeNo = '" + officeNo + "' , cellNo1 = '" + cellNo1 + "', driverNo =  '" + driverNo + "' , emailAddress = '" + emailAddress + "', homeAddress = '" + homeAddress + "' , nTNNo = '" + nTNNo + "' , customerType = '" + customerType + "' , recoveryBy = '"+recoveryBy +"', insertedBy = '" + insertedBy + "' , UpdatedBy =  '" + UpdatedBy + "', DOB = '"+DOB +"' Where ( customerID = "+customerId+")";
             SqlCommand mycommand = new SqlCommand(insertQuery, sqlC);
             try
             {
@@ -197,13 +200,41 @@ namespace KarachiMotorSystem
             TbxUpdatedBy.Text =     "";
             TbxInsertedBy.Text =    "";
             TbxDOB.Text =           "";
+            TbxSearchCustomerID.Text = "";
+            TbxSearchCName.Text = "";
+            TbxSearchCNIC.Text = "";
+            TbxSearchCellNo.Text = "";
+            string current = Convert.ToString(this.getCustomerID());
+            TbxCustomerId.Text = current;
         }
 
         protected void BtnBack(object sender, EventArgs e)
         {
             Response.Redirect("HomePage.aspx");
-        }                          
+        }
 
-      
+
+        private int getCustomerID() {
+            int customer = 0;
+            ConnectionStringClass myConnection = new ConnectionStringClass();
+            SqlConnection sqlConn = myConnection.getDatabaseConnection();
+
+            string q = " select customerID from customerMaster order by customerID desc ";
+            SqlCommand getIDCommand = new SqlCommand(q, sqlConn);
+            try
+            {
+                sqlConn.Open();
+                int id = Convert.ToInt32(getIDCommand.ExecuteScalar()) + 1;
+                customer = id;
+                sqlConn.Close();
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+
+            return customer;
+        }
     }
 }

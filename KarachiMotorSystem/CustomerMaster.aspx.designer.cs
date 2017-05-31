@@ -157,13 +157,13 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Label Label7;
         
         /// <summary>
-        /// TextBox2 control.
+        /// TbxSearchCName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox TbxSearchCName;
         
         /// <summary>
         /// Label8 control.
@@ -175,13 +175,13 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Label Label8;
         
         /// <summary>
-        /// TextBox3 control.
+        /// TbxSearchCNIC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox TbxSearchCNIC;
         
         /// <summary>
         /// Label9 control.
@@ -193,13 +193,13 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Label Label9;
         
         /// <summary>
-        /// TextBox4 control.
+        /// TbxSearchCellNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox TbxSearchCellNo;
         
         /// <summary>
         /// Label10 control.

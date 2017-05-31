@@ -69,19 +69,19 @@
                     <asp:Label ID="Label7" runat="server" Text="C.Name:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TbxSearchCName" runat="server"></asp:TextBox>
                 </td>
                 <td>
                     <asp:Label ID="Label8" runat="server" Text="C.N.I.C:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TbxSearchCNIC" runat="server"></asp:TextBox>
                 </td>
                 <td>
                     <asp:Label ID="Label9" runat="server" Text="Cell#:"></asp:Label>
                 </td>
                 <td style="width: 90px">
-                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TbxSearchCellNo" runat="server"></asp:TextBox>
                 </td>
             </tr>
         </table>
@@ -97,7 +97,7 @@
                     <asp:Label ID="Label14" runat="server" Text="Customer Id:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TbxCustomerId" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TbxCustomerId" runat="server" Enabled="False"></asp:TextBox>
                 </td>
                 <td>
                     <asp:Label ID="Label15" runat="server" Text="Customer Name:"></asp:Label>

@@ -12,7 +12,6 @@ namespace KarachiMotorSystem
     public partial class StockMaster : System.Web.UI.Page
     {
 
-
         private int getstockID()
         {
 
@@ -41,8 +40,6 @@ namespace KarachiMotorSystem
 
         }
 
-
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
@@ -53,9 +50,6 @@ namespace KarachiMotorSystem
             }
             
         }
-
-        
-
 
         protected void BtnSave(object sender, EventArgs e)
         {
