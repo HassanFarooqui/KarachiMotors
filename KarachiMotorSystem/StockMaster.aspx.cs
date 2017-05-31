@@ -45,10 +45,17 @@ namespace KarachiMotorSystem
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string current = Convert.ToString(this.getstockID());
-            TbxStockID.Text = current;
-
+            if (!Page.IsPostBack)
+            {
+                string current = Convert.ToString(this.getstockID());
+                TbxStockID.Text = current;
+    
+            }
+            
         }
+
+        
+
 
         protected void BtnSave(object sender, EventArgs e)
         {
@@ -139,13 +146,14 @@ namespace KarachiMotorSystem
             string others = TbxOther.Text;
 
 
+            var myQuery = "UPDATE StockMaster SET  RegNo = '" + reg + "', Make = '" + make + "', FrameNo = '" + frameNo + "', EngineNo = '" + engineNo + "',";
+            myQuery = myQuery + " Variant = '" + variant + "', ModelYear = '" + modelYear + "', Color = '" + color + "', EngineType = '" + engineType + "', TransmissionType = '" +transmissionType + "', PowerWindow = '" + powerWindow + "',";
+            myQuery = myQuery + "PowerLock = '" + powerLock + "', CruiseControl = '" + ccontrol + "', AirCondition = '" + aircondition + "', Radio ='" + radio + "', Player = '" + player + "',";
+            myQuery = myQuery + " Sunroof = '" + sunroof + "', Wheelcover = '" + wheelcover + "', WheelChrome = '" + wheelChrome + "', WheelAluminium = '" + wheelAluminium + "',Type = '" + purchaseType + "',";
+            myQuery = myQuery + "Other = '" + others + "' WHERE (StockId = " + stockId + ")";
 
-            String query = "update stockmaster (stockid,regno,make,frameno,engineno,variant,modelyear,color,enginetype,transmissiontype,powerwindow,powerlock,cruiseControl,aircondition,radio,player,sunroof,wheelcover,wheelchrome,wheelaluminium,type,other) values ('" + stockId + "', '" + reg + "','" + make + "','" + frameNo + "','" + engineNo + "','" + variant + "','" + modelYear + "',";
-            query += "'" + color + "','" + engineType + "','" + transmissionType + "','" + powerWindow + "','" + powerLock + "',";
-            query += "'" + ccontrol + "','" + aircondition + "','" + radio + "','" + player + "','" + sunroof + "',";
-            query += "'" + wheelcover + "','" + wheelChrome + "','" + wheelAluminium + "','" + purchaseType + "','" + others + "')";
 
-            SqlCommand saveInStockMaster = new SqlCommand(query, sqlC);
+            SqlCommand saveInStockMaster = new SqlCommand(myQuery, sqlC);
             try
             {
                 sqlC.Open();
@@ -170,7 +178,7 @@ namespace KarachiMotorSystem
 
             ConnectionStringClass connectionString = new ConnectionStringClass();
             SqlConnection sc = connectionString.getDatabaseConnection();
-            string Query = "Select * from StockMaster where '" + columnName + "' = '" + searchBy + "'";
+            string Query = "Select * from StockMaster where " + columnName + " = " + searchBy +"";
             SqlCommand updateCommand = new SqlCommand(Query, sc);
             SqlDataAdapter myadapter = new SqlDataAdapter(updateCommand);
             DataTable myTable = new DataTable();
@@ -229,9 +237,6 @@ namespace KarachiMotorSystem
 
         }
 
-
-
-
         protected void BtnSearch_Click(object sender, EventArgs e)
         {
             string stockID = TbxSearchStockID.Text;
@@ -272,5 +277,70 @@ namespace KarachiMotorSystem
 
 
         }
+
+        protected void deleteRecord(object sender, EventArgs e)
+        {
+            string deleteStockId = TbxStockID.Text;
+            ConnectionStringClass connectionString = new ConnectionStringClass();
+            SqlConnection sc = connectionString.getDatabaseConnection();
+            string Query = "Delete StockMaster where StockID = '" + deleteStockId + "'";
+            SqlCommand deleteCommand = new SqlCommand(Query, sc);
+            try
+            {
+                sc.Open();
+                deleteCommand.ExecuteNonQuery();
+                sc.Close();
+            }
+            catch (Exception ex)
+            {
+
+                string script = "alert(\"Does Not Delete Sucessfully!\");";
+                ScriptManager.RegisterStartupScript(this, GetType(),
+                                      "ServerControlScript", script, true);
+            }
+
+
+        }
+
+        private void clearallTextboxes() {
+
+
+
+                  TbxStockID.Text            =  ""; 
+                  TbxRegNo.Text             =   "";
+                  TbxMake.Text               =  "";
+                  TbxFrameNo.Text            =  "";
+                  TbxEngineNo.Text           =  "";
+                  TbxVariant.Text            =  "";
+                  TbxModelYear.Text          =  "";
+                  TbxColor.Text              =  "";
+
+
+                  DdnEnginetype.SelectedValue  = "Select";
+                  DdnTransmissionType.SelectedValue = "Select";
+                  DdnPowerWindow.SelectedValue = "Select";
+                  DdnPowerLock.SelectedValue = "Select";
+                  DdnCruiseControl.SelectedValue = "Select";
+                  DdnAirCondition.SelectedValue = "Select";
+                  DdnRadio.SelectedValue = "Select";
+                  DdnPlayer.SelectedValue = "Select";
+                  DdnSunRoof.SelectedValue = "Select";
+                  DdnWheelCover.SelectedValue = "Select";
+                  DdnWheelChrome.SelectedValue = "Select";
+                  DdnWheelAluminium.SelectedValue = "Select";
+                  DdnType.SelectedValue = "Select";
+                  TbxOther.Text              =  "";
+                  string current = Convert.ToString(this.getstockID());
+                  TbxStockID.Text = current;
+
+        }
+
+        protected void clear_pressed(object sender, EventArgs e)
+        {
+            this.clearallTextboxes();
+        }
+
+       
+
     }
 }

@@ -11,13 +11,14 @@
                     <asp:Label ID="LblstockID" runat="server" Text="Stock ID:"></asp:Label>
                 </td>
                 <td style="width: 215px; height: 26px; text-align: left;">
-                    <asp:TextBox ID="TbxStockID" runat="server" Width="167px" ReadOnly="True"></asp:TextBox>
+                    <asp:TextBox ID="TbxStockID" runat="server" Width="167px" Enabled="False"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right; height: 26px;">
                     <asp:Label ID="LblEngineType" runat="server" Text="Engine Type:"></asp:Label>
                 </td>
                 <td style="width: 209px; height: 26px; text-align: left;">
                     <asp:DropDownList ID="DdnEnginetype" runat="server" Height="21px" Width="153px" style="margin-left: 0px">
+                        <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>4 Cylinder</asp:ListItem>
                         <asp:ListItem>6 Cylinder</asp:ListItem>
                     </asp:DropDownList>
@@ -27,6 +28,7 @@
                 </td>
                 <td style="height: 26px">
                     <asp:DropDownList ID="DdnSunRoof" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                        <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
                     </asp:DropDownList>
@@ -44,6 +46,7 @@
                 </td>
                 <td style="width: 209px; text-align: left;">
                     <asp:DropDownList ID="DdnTransmissionType" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                        <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Automatic</asp:ListItem>
                         <asp:ListItem>Manual</asp:ListItem>
                         <asp:ListItem>Steermatic</asp:ListItem>
@@ -53,7 +56,8 @@
                     <asp:Label ID="LblEngineType1" runat="server" Text="Wheel Cover:"></asp:Label>
                 </td>
                 <td>
-                    <asp:DropDownList ID="DdnWheelCover" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                    <asp:DropDownList ID="DdnWheelCover" runat="server" Height="20px" style="margin-left: 0px" Width="155px" >
+                        <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
                     </asp:DropDownList>
@@ -71,6 +75,7 @@
                 </td>
                 <td style="width: 209px; text-align: left;">
                     <asp:DropDownList ID="DdnPowerWindow" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                        <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
                     </asp:DropDownList>
@@ -80,6 +85,7 @@
                 </td>
                 <td>
                     <asp:DropDownList ID="DdnWheelChrome" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                        <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
                     </asp:DropDownList>
@@ -97,6 +103,7 @@
                 </td>
                 <td style="width: 209px; text-align: left;">
                     <asp:DropDownList ID="DdnPowerLock" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                        <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
                     </asp:DropDownList>
@@ -106,6 +113,7 @@
                 </td>
                 <td>
                     <asp:DropDownList ID="DdnWheelAluminium" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                        <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
                     </asp:DropDownList>
@@ -123,6 +131,7 @@
                 </td>
                 <td style="width: 209px; text-align: left;">
                     <asp:DropDownList ID="DdnCruiseControl" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                        <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
                     </asp:DropDownList>
@@ -132,6 +141,7 @@
                 </td>
                 <td>
                     <asp:DropDownList ID="DdnType" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                        <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Trade</asp:ListItem>
                         <asp:ListItem>Purchase</asp:ListItem>
                         <asp:ListItem>USB Player</asp:ListItem>
@@ -150,6 +160,7 @@
                 </td>
                 <td style="width: 209px; text-align: left;">
                     <asp:DropDownList ID="DdnAirCondition" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                        <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
                     </asp:DropDownList>
@@ -173,6 +184,7 @@
                 </td>
                 <td style="width: 209px; text-align: left;">
                     <asp:DropDownList ID="DdnRadio" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                        <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
                     </asp:DropDownList>
@@ -190,6 +202,7 @@
                 </td>
                 <td style="width: 209px; text-align: left;">
                     <asp:DropDownList ID="DdnPlayer" runat="server" Height="21px" style="margin-left: 0px" Width="156px">
+                        <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>DVD Player</asp:ListItem>
                         <asp:ListItem>F/M </asp:ListItem>
                         <asp:ListItem>USB Player</asp:ListItem>
@@ -241,10 +254,10 @@
                                  <asp:Button ID="BtnUpdate" runat="server" Height="33px" style="margin-right: 0px" Text="Update" Width="207px" OnClick="BtnUpdate_Click" />
                              </td>
                              <td>
-                                 <asp:Button ID="Button16" runat="server" Height="33px" style="margin-right: 0px" Text="Delete" Width="207px" />
+                                 <asp:Button ID="Button16" runat="server" Height="33px" style="margin-right: 0px" Text="Delete" Width="207px" OnClick="deleteRecord" />
                              </td>
                              <td>
-                                 <asp:Button ID="BtnClear" runat="server" Height="33px" style="margin-right: 0px" Text="Clear" Width="207px" />
+                                 <asp:Button ID="BtnClear" runat="server" Height="33px" style="margin-right: 0px" Text="Clear" Width="207px" OnClick="clear_pressed" />
                              </td>
                              <td>
                                  <asp:Button ID="BtnExit" runat="server" Height="33px" style="margin-right: 0px" Text="Exit" Width="207px" />

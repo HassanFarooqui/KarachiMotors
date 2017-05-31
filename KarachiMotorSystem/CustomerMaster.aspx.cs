@@ -94,7 +94,7 @@ namespace KarachiMotorSystem
             }
             catch (Exception ex)
             {
-                string script = "alert(\"Record Does Not Exist Successfully!\");";
+                string script = "alert(\"Record Does Not Update Successfully!\");";
                 ScriptManager.RegisterStartupScript(this, GetType(),
                                       "ServerControlScript", script, true);
             }            
