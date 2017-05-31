@@ -11,7 +11,7 @@
                     <asp:Label ID="LblstockID" runat="server" Text="Stock ID:"></asp:Label>
                 </td>
                 <td style="width: 215px; height: 26px; text-align: left;">
-                    <asp:TextBox ID="TbxStockID" runat="server" Width="167px"></asp:TextBox>
+                    <asp:TextBox ID="TbxStockID" runat="server" Width="167px" ReadOnly="True"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right; height: 26px;">
                     <asp:Label ID="LblEngineType" runat="server" Text="Engine Type:"></asp:Label>
@@ -105,7 +105,7 @@
                     <asp:Label ID="DdnwheelAluminum" runat="server" Text="Wheel Aluminum:"></asp:Label>
                 </td>
                 <td>
-                    <asp:DropDownList ID="DropDownList18" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                    <asp:DropDownList ID="DdnWheelAluminium" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
                     </asp:DropDownList>
@@ -226,7 +226,7 @@
                     <asp:TextBox ID="TbxSearchChassisNo" runat="server" Width="167px"></asp:TextBox>
                 </td>
                  <td>
-                     <asp:Button ID="BtnSearch" runat="server" Height="33px" style="margin-right: 0px" Text="Search" Width="207px" />
+                     <asp:Button ID="BtnSearch" runat="server" Height="33px" style="margin-right: 0px" Text="Search" Width="207px" OnClick="BtnSearch_Click" />
                 </td>   
             </tr>
 
@@ -238,7 +238,7 @@
                                  <asp:Button ID="BtnSSave" runat="server" Height="33px" style="margin-right: 0px" Text="Save" Width="207px" OnClick="BtnSave" />
                              </td>
                              <td>
-                                 <asp:Button ID="BtnUpdate" runat="server" Height="33px" style="margin-right: 0px" Text="Update" Width="207px" />
+                                 <asp:Button ID="BtnUpdate" runat="server" Height="33px" style="margin-right: 0px" Text="Update" Width="207px" OnClick="BtnUpdate_Click" />
                              </td>
                              <td>
                                  <asp:Button ID="Button16" runat="server" Height="33px" style="margin-right: 0px" Text="Delete" Width="207px" />

@@ -220,13 +220,13 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Label DdnwheelAluminum;
         
         /// <summary>
-        /// DropDownList18 control.
+        /// DdnWheelAluminium control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList18;
+        protected global::System.Web.UI.WebControls.DropDownList DdnWheelAluminium;
         
         /// <summary>
         /// LblEngineNo control.
