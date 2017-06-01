@@ -53,9 +53,7 @@ namespace KarachiMotorSystem
 
         protected void BtnSave(object sender, EventArgs e)
         {
-            ConnectionStringClass myConnection = new ConnectionStringClass();
-            SqlConnection sqlC = myConnection.getDatabaseConnection();
-
+            
             string stockId = TbxStockID.Text;
             string reg = TbxRegNo.Text;
             string make = TbxMake.Text;
@@ -81,6 +79,12 @@ namespace KarachiMotorSystem
             string purchaseType = DdnType.Text;
             string others = TbxOther.Text;
 
+            if(reg!="" && frameNo != "" && engineNo != ""){
+
+            ConnectionStringClass myConnection = new ConnectionStringClass();
+            SqlConnection sqlC = myConnection.getDatabaseConnection();
+
+           
 
 
             String query = "insert into stockmaster (stockid,regno,make,frameno,engineno,variant,modelyear,color,enginetype,transmissiontype,powerwindow,powerlock,cruiseControl,aircondition,radio,player,sunroof,wheelcover,wheelchrome,wheelaluminium,type,other) values ('" + stockId + "', '" + reg + "','" + make + "','" + frameNo + "','" + engineNo + "','" + variant + "','" + modelYear + "',";
@@ -105,14 +109,17 @@ namespace KarachiMotorSystem
             }
 
 
+            }else{
 
+                string script = "alert(\" Must Enter Vehicle Registration No ,Engine No & Frame No !\");";
+                ScriptManager.RegisterStartupScript(this, GetType(),
+                                      "ServerControlScript", script, true);
+            }
 
         }
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
         {
-            ConnectionStringClass myConnection = new ConnectionStringClass();
-            SqlConnection sqlC = myConnection.getDatabaseConnection();
 
             string stockId = TbxStockID.Text;
             string reg = TbxRegNo.Text;
@@ -138,6 +145,12 @@ namespace KarachiMotorSystem
             string wheelAluminium = DdnWheelAluminium.Text;
             string purchaseType = DdnType.Text;
             string others = TbxOther.Text;
+
+            if(reg != "" && frameNo != "" && engineNo != ""){
+            ConnectionStringClass myConnection = new ConnectionStringClass();
+            SqlConnection sqlC = myConnection.getDatabaseConnection();
+
+           
 
 
             var myQuery = "UPDATE StockMaster SET  RegNo = '" + reg + "', Make = '" + make + "', FrameNo = '" + frameNo + "', EngineNo = '" + engineNo + "',";
@@ -163,7 +176,13 @@ namespace KarachiMotorSystem
                 throw;
             }
 
+            }else{
 
+                string script = "alert(\" Must Enter Vehicle Registration No ,Engine No & Frame No !\");";
+                ScriptManager.RegisterStartupScript(this, GetType(),
+                                      "ServerControlScript", script, true);
+            
+            }
 
         }
 
@@ -234,22 +253,24 @@ namespace KarachiMotorSystem
         protected void BtnSearch_Click(object sender, EventArgs e)
         {
             string stockID = TbxSearchStockID.Text;
-            if (stockID == " ")
+            if (stockID == "")
             {
 
                 string regNo = TbxSearchRegistrationNo.Text;
-                if (regNo == " ")
+                if (regNo == "")
                 {
-                    string engineNo = TbxSearchChassisNo.Text;
-                    if (engineNo != " ")
+                    string frameNo = TbxSearchChassisNo.Text;
+                    if (frameNo != "")
                     {
 
-                        this.getStockRecord(engineNo, "EngineNo");
+                        this.getStockRecord(frameNo, "FrameNo");
 
                     }
                     else
                     {
-                        Response.Write("please enter any option");
+                        string script = "alert(\"Please Enter Any Option\");";
+                        ScriptManager.RegisterStartupScript(this, GetType(),
+                                              "ServerControlScript", script, true);
                     }
 
                 }
@@ -274,25 +295,37 @@ namespace KarachiMotorSystem
 
         protected void deleteRecord(object sender, EventArgs e)
         {
-            string deleteStockId = TbxStockID.Text;
-            ConnectionStringClass connectionString = new ConnectionStringClass();
-            SqlConnection sc = connectionString.getDatabaseConnection();
-            string Query = "Delete StockMaster where StockID = '" + deleteStockId + "'";
-            SqlCommand deleteCommand = new SqlCommand(Query, sc);
-            try
+            if (TbxRegNo.Text != "")
             {
-                sc.Open();
-                deleteCommand.ExecuteNonQuery();
-                sc.Close();
-            }
-            catch (Exception ex)
-            {
+                string deleteStockId = TbxStockID.Text;
 
-                string script = "alert(\"Does Not Delete Sucessfully!\");";
+                ConnectionStringClass connectionString = new ConnectionStringClass();
+                SqlConnection sc = connectionString.getDatabaseConnection();
+                string Query = "Delete StockMaster where StockID = '" + deleteStockId + "'";
+                SqlCommand deleteCommand = new SqlCommand(Query, sc);
+                try
+                {
+                    sc.Open();
+                    deleteCommand.ExecuteNonQuery();
+                    sc.Close();
+                }
+                catch (Exception ex)
+                {
+
+                    string script = "alert(\"Does Not Delete Sucessfully!\");";
+                    ScriptManager.RegisterStartupScript(this, GetType(),
+                                          "ServerControlScript", script, true);
+                }
+
+            }
+            else 
+            {
+                string script = "alert(\"Do Not Delete Empty Record!\");";
                 ScriptManager.RegisterStartupScript(this, GetType(),
                                       "ServerControlScript", script, true);
+                 
+            
             }
-
 
         }
 

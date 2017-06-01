@@ -97,6 +97,7 @@
                 </td>
                 <td style="width: 215px; text-align: left;">
                     <asp:TextBox ID="TbxFrameNo" runat="server" Width="167px"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TbxFrameNo" ErrorMessage="*" ForeColor="Red" ValidationExpression="^\d{3}[A-Z]{1,3}-\d{5}$"></asp:RegularExpressionValidator>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblstockID11" runat="server" Text="Power Lock:"></asp:Label>
