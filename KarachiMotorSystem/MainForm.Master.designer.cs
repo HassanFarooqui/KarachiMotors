@@ -67,13 +67,13 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Button BtnStockMaster;
         
         /// <summary>
-        /// Button4 control.
+        /// BtnSale control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button4;
+        protected global::System.Web.UI.WebControls.Button BtnSale;
         
         /// <summary>
         /// Button5 control.

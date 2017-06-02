@@ -42,6 +42,7 @@ namespace KarachiMotorSystem
                 var count = loginCommand.ExecuteScalar();
                 if (count != null)
                 {
+                    FlagsVariables.userId = email;
                     Response.Redirect("HomePage.aspx");
 
                 }

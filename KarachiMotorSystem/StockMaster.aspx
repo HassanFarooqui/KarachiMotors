@@ -97,7 +97,7 @@
                 </td>
                 <td style="width: 215px; text-align: left;">
                     <asp:TextBox ID="TbxFrameNo" runat="server" Width="167px"></asp:TextBox>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TbxFrameNo" ErrorMessage="*" ForeColor="Red" ValidationExpression="^\d{3}[A-Z]{1,3}-\d{5}$"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TbxFrameNo" ErrorMessage="*" ForeColor="Red" ValidationExpression="^[A-Z]{1,3}-\d{5}$"></asp:RegularExpressionValidator>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblstockID11" runat="server" Text="Power Lock:"></asp:Label>
@@ -167,7 +167,7 @@
                     </asp:DropDownList>
                 </td>
                 <td style="text-align: right; width: 162px" rowspan="3">
-                    <asp:Label ID="LblEngineType5" runat="server" Text="Other:"></asp:Label>
+                    <asp:Label ID="LblEngineType5" runat="server" Text="Amount :"></asp:Label>
                 </td>
                 <td rowspan="3">
                     <asp:TextBox ID="TbxOther" runat="server" Width="154px" Height="64px" style="text-align: left" TextMode="MultiLine"></asp:TextBox>

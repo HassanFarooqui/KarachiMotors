@@ -68,6 +68,7 @@
     <Content Include="Media\back.jpg" />
     <Content Include="Media\Men.jpg" />
     <Content Include="Media\Men1.jpg" />
+    <Content Include="Sale.aspx" />
     <Content Include="SignUpFoam.aspx" />
     <Content Include="SignUpStyle.css" />
     <Content Include="StockMaster.aspx" />
@@ -112,6 +113,13 @@
       <DependentUpon>MainForm.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sale.aspx.cs">
+      <DependentUpon>Sale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sale.aspx.designer.cs">
+      <DependentUpon>Sale.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SignUpFoam.aspx.cs">
       <DependentUpon>SignUpFoam.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

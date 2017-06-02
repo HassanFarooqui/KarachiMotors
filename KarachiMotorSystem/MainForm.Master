@@ -53,7 +53,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button4" runat="server" Height="30px" Text="Button" Width="178px" />
+                    <asp:Button ID="BtnSale" runat="server" Height="30px" Text="Sale" Width="178px" OnClick="Sale" />
                 </td>
             </tr>
             <tr>

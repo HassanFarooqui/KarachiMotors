@@ -28,5 +28,10 @@ namespace KarachiMotorSystem
         {
             Response.Redirect("StockMaster.aspx");
         }
+
+        protected void Sale(object sender, EventArgs e)
+        {
+            Response.Redirect("Sale.aspx");
+        }
     }
 }

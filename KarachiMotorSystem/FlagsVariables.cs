@@ -9,5 +9,6 @@ namespace KarachiMotorSystem
     {
        public static FlagsVariables sharedInstanse = new FlagsVariables();
        public static bool accountCreate = false;
+       public static string userId;
     }
 }
