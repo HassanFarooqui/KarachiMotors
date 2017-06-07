@@ -175,26 +175,29 @@ namespace KarachiMotorSystem
         {
             string UInput = TbxSearch.Text;
             string CName = "saleID";
-
-            this.GetSaleRecord(CName, UInput);
+            string table = "Sale";
+            this.GetSaleRecord(table,CName, UInput);
         }
 
-        private void GetSaleRecord(string ColumnName, string Userinput)
+        private void GetSaleRecord(string tableName,string ColumnName, string Userinput)
         {
             if (Userinput != "")
             {
                 ConnectionStringClass myConn = new ConnectionStringClass();
                SqlConnection dbConnec = myConn.getDatabaseConnection();
 
-               string Query = "Select * from Sale Where "+ColumnName+" = "+ Userinput+"";
+               string Query = "Select * from "+tableName+" Where "+ ColumnName +" = '"+ Userinput +"'";
                SqlCommand myCommand = new SqlCommand(Query, dbConnec);
                SqlDataAdapter myAdapter = new SqlDataAdapter(myCommand);
                DataTable myTable = new DataTable();
                try
                {
-                   myAdapter.Fill(myTable);
                    dbConnec.Open();
+
+                   myAdapter.Fill(myTable);
+                  
                    var record = myCommand.ExecuteScalar();
+                   dbConnec.Close();
                    if (record != null)
                    {
 
@@ -202,33 +205,115 @@ namespace KarachiMotorSystem
                        TbxSalePerson.Text = myTable.Rows[0]["SalePerson"].ToString();
                        trade_DropDownList.Text = myTable.Rows[0]["trade"].ToString();
                        TbxDate.Text = myTable.Rows[0]["date"].ToString();
-                       TbxAmount.Text = myTable.Rows[0]["saleAmount"].ToString();
+                       TbxSaleAmount.Text = myTable.Rows[0]["saleAmount"].ToString();
                        TbxCNIC.Text = myTable.Rows[0]["CNIC"].ToString();
                        TbxRegNo.Text = myTable.Rows[0]["RegNo"].ToString();
                        TbxCustomerName.Text = myTable.Rows[0]["customerName"].ToString();
+                       this.GetCustomerRecord("CustomerMaster", "cNIC", TbxCNIC.Text);
+                       this.GetStockMasterRecord("StockMaster", "RegNo", TbxRegNo.Text);
+
                    }
                }
-               catch (Exception)
+               catch (Exception ex )
                {
-                   
-                   throw;
+
+                   Response.Write(ex);
                }
 
             }
         }
+        private void GetStockMasterRecord(string tableName, string ColumnName, string Userinput)
+        {
+            if (Userinput != "")
+            {
+                ConnectionStringClass myConn = new ConnectionStringClass();
+                SqlConnection dbConnec = myConn.getDatabaseConnection();
 
+                string Query = "Select Stockid,Make,FrameNo,EngineNo,Variant, Other from " + tableName + " Where " + ColumnName + " = '" + Userinput + "'";
+                SqlCommand myCommand = new SqlCommand(Query, dbConnec);
+                SqlDataAdapter myAdapter = new SqlDataAdapter(myCommand);
+                DataTable myTable = new DataTable();
+                try
+                {
+                    dbConnec.Open();
+
+                    myAdapter.Fill(myTable);
+
+                    var record = myCommand.ExecuteReader();
+                    dbConnec.Close();
+                    if (record != null)
+                    {
+
+                        TbxStockID.Text = myTable.Rows[0]["Stockid"].ToString();
+                        TbxMake.Text = myTable.Rows[0]["Make"].ToString();
+                        TbxFrameNo.Text = myTable.Rows[0]["FrameNo"].ToString();
+                        TbxEngineNo.Text = myTable.Rows[0]["EngineNo"].ToString();
+                        TbxVariant.Text = myTable.Rows[0]["Variant"].ToString();
+                        TbxAmount.Text = myTable.Rows[0]["Other"].ToString();
+                        
+
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    Response.Write(ex);
+                }
+
+            }
+        }
+        private void GetCustomerRecord(string tableName, string ColumnName, string Userinput)
+        {
+            if (Userinput != "")
+            {
+                ConnectionStringClass myConn = new ConnectionStringClass();
+                SqlConnection dbConnec = myConn.getDatabaseConnection();
+
+                string Query = "Select customerID,emailAddress,cellNo1,homeAddress,driverNo from " + tableName + " Where " + ColumnName + " = '" + Userinput + "'";
+                SqlCommand myCommand = new SqlCommand(Query, dbConnec);
+                SqlDataAdapter myAdapter = new SqlDataAdapter(myCommand);
+                DataTable myTable = new DataTable();
+                try
+                {
+                    dbConnec.Open();
+
+                    myAdapter.Fill(myTable);
+
+                    var record = myCommand.ExecuteReader();
+                    dbConnec.Close();
+                    if (record != null)
+                    {
+
+                        TbxCustomerID.Text = myTable.Rows[0]["customerID"].ToString();
+                        TbxEmail.Text = myTable.Rows[0]["emailAddress"].ToString();
+                        TbxCellNo.Text = myTable.Rows[0]["cellNo1"].ToString();
+                        TbxHomeAddress.Text = myTable.Rows[0]["homeAddress"].ToString();
+                        TbxDriverNo.Text = myTable.Rows[0]["driverNo"].ToString();
+                      
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    Response.Write(ex);
+                }
+
+            }
+        }
         protected void SearchByCustomerCNICEvent(object sender, EventArgs e)
         {
             string UInput = TbxSearch.Text;
             string CName = "CNIC";
-            this.GetSaleRecord(CName, UInput);
+            string table = "Sale";
+            this.GetSaleRecord(table,CName, UInput);
         }
 
         protected void SearchByVehicleStockNoEvent(object sender, EventArgs e)
         {
             string UInput = TbxSearch.Text;
             string CName = "RegNo";
-            this.GetSaleRecord(CName, UInput);
+            string table = "Sale";
+            this.GetSaleRecord(table,CName, UInput);
 
         }
 
