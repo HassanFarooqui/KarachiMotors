@@ -58,7 +58,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button5" runat="server" Height="30px" Text="Button" Width="178px" />
+                    <asp:Button ID="BtnPurchase" runat="server" Height="30px" Text="Purchase" Width="178px" OnClick="BtnPurchase_Click" />
                 </td>
             </tr>
             <tr>

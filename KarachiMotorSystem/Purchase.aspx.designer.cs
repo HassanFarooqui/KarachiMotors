@@ -10,7 +10,7 @@
 namespace KarachiMotorSystem {
     
     
-    public partial class Sale {
+    public partial class Purchase {
         
         /// <summary>
         /// LblSale control.
@@ -193,13 +193,13 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Label LblTrade;
         
         /// <summary>
-        /// trade_DropDownList control.
+        /// DropDownList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList trade_DropDownList;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
         /// LblCellNo control.
@@ -382,6 +382,15 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.TextBox TbxAmount;
         
         /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
         /// TbxSearch control.
         /// </summary>
         /// <remarks>
@@ -445,21 +454,21 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Button BtnClear;
         
         /// <summary>
-        /// BtnSearchByCustomerCNIC control.
+        /// Button18 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSearchByCustomerCNIC;
+        protected global::System.Web.UI.WebControls.Button Button18;
         
         /// <summary>
-        /// BtnSearchByVehicleRegNo control.
+        /// Button19 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSearchByVehicleRegNo;
+        protected global::System.Web.UI.WebControls.Button Button19;
     }
 }

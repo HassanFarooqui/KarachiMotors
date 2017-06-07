@@ -33,5 +33,12 @@ namespace KarachiMotorSystem
         {
             Response.Redirect("Sale.aspx");
         }
+
+        protected void BtnPurchase_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Purchase.aspx");
+        }
+
+       
     }
 }

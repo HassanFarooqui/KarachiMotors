@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainForm.Master" AutoEventWireup="true" CodeBehind="Sale.aspx.cs" Inherits="KarachiMotorSystem.Sale" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainForm.Master" AutoEventWireup="true" CodeBehind="Purchase.aspx.cs" Inherits="KarachiMotorSystem.Purchase" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="CPH" runat="server">
-    <div id="ContentPage" >
+     <div id="ContentPage" >
 
         <table class="auto-style1">
             <tr>
                 <td colspan="6">
-                    <asp:Label ID="LblSale" runat="server" style="font-weight: 700; font-size: x-large" Text="Sale Form"></asp:Label>
+                    <asp:Label ID="LblSale" runat="server" style="font-weight: 700; font-size: x-large" Text="Purchase Form"></asp:Label>
                 </td>
             </tr>
             <tr>
@@ -13,15 +13,15 @@
                     <asp:Label ID="LblCNIC" runat="server" Text="CNIC :"></asp:Label>
                 </td>
                 <td style="width: 227px; text-align: left">
-                    <asp:TextBox ID="TbxCNIC" runat="server" Height="25px" Width="186px" AutoPostBack="True" OnTextChanged="CNICTextChangeEvent"></asp:TextBox>
-                    <asp:Button ID="BtnOPenCustomerPage" runat="server" OnClick="BtnOPenCustomerMasterEvent" Text="*" Width="28px" />
+                    <asp:TextBox ID="TbxCNIC" runat="server" Height="25px" Width="186px" AutoPostBack="False" ></asp:TextBox>
+                    <asp:Button ID="BtnOPenCustomerPage" runat="server"  Text="*" Width="28px" />
                 </td>
                 <td style="width: 157px; text-align: right;">
                     <asp:Label ID="LblRegNo" runat="server" Text="Reg # :"></asp:Label>
                 </td>
                 <td style="text-align: left; width: 246px">
-                    <asp:TextBox ID="TbxRegNo" runat="server" Height="25px" Width="186px" AutoPostBack="True" OnTextChanged="RegistrationTextchangeEvent"></asp:TextBox>
-                    <asp:Button ID="BtnOPenCustomerPAge0" runat="server" OnClick="BtnOpenStockMasterEvent" Text="*" Width="28px" />
+                    <asp:TextBox ID="TbxRegNo" runat="server" Height="25px" Width="186px" AutoPostBack="False" ></asp:TextBox>
+                    <asp:Button ID="BtnOPenCustomerPAge0" runat="server" Text="*" Width="28px" />
                 </td>
                 <td style="width: 144px; text-align: right;">
                     <asp:Label ID="LblSaleID" runat="server" Text="Sale ID :"></asp:Label>
@@ -67,7 +67,7 @@
                     <asp:Label ID="LblTrade" runat="server" Text="Trade :"></asp:Label>
                 </td>
                 <td style="text-align: left">
-                    <asp:DropDownList ID="trade_DropDownList" runat="server" Height="34px" Width="192px">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Height="34px" Width="192px">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Cash</asp:ListItem>
                         <asp:ListItem>Credit</asp:ListItem>
@@ -169,12 +169,12 @@
 
             <tr>
                 <td style="width: 127px; text-align: right;">
-                    <asp:Label Text="Select : "  runat="server" /></td>
+                    <asp:Label ID="Label1" Text="Select : "  runat="server" /></td>
                 <td style="text-align: left;" colspan="3">
                     <asp:TextBox ID="TbxSearch" runat="server" Height="25px" Width="567px"></asp:TextBox>
                 </td>
                 <td style="text-align: left; " colspan="2">
-                    <asp:Button ID="BtnSearch" runat="server" Height="32px" Text="Search" Width="341px" OnClick="SalePageSearchEvent" />
+                    <asp:Button ID="BtnSearch" runat="server" Height="32px" Text="Search" Width="341px" />
                 </td>
             </tr>
 
@@ -184,7 +184,7 @@
             <tr>
                 <td style="width: 68px">&nbsp;</td>
                 <td style="width: 136px">
-                    <asp:Button ID="BtnSave" runat="server" Height="32px" Text="Save" Width="134px" OnClick="Save_event" />
+                    <asp:Button ID="BtnSave" runat="server" Height="32px" Text="Save" Width="134px" />
                 </td>
                 <td style="width: 136px">
                     <asp:Button ID="BtnUpdate" runat="server" Height="32px" style="margin-left: 0px" Text="Update" Width="136px" />
@@ -196,16 +196,17 @@
                     <asp:Button ID="BtnPrint" runat="server" Height="32px" Text="Print" Width="136px" />
                 </td>
                 <td style="width: 137px">
-                    <asp:Button ID="BtnClear" runat="server" Height="32px" Text="Clear" Width="136px" OnClick="ClearButtonEvent" />
+                    <asp:Button ID="BtnClear" runat="server" Height="32px" Text="Clear" Width="136px" />
                 </td>
                 <td style="width: 139px">
-                    <asp:Button ID="BtnSearchByCustomerCNIC" runat="server" Height="32px" Text="Search by CNIC" Width="136px" OnClick="SearchByCustomerCNICEvent" />
+                    <asp:Button ID="Button18" runat="server" Height="32px" Text="Button" Width="136px" />
                 </td>
                 <td>
-                    <asp:Button ID="BtnSearchByVehicleRegNo" runat="server" Height="32px" Text="Search By Reg#" Width="136px" OnClick="SearchByVehicleStockNoEvent" />
+                    <asp:Button ID="Button19" runat="server" Height="32px" Text="Button" Width="136px" />
                 </td>
             </tr>
         </table>
 
     </div>
+   
 </asp:Content>

@@ -20,6 +20,9 @@ namespace KarachiMotorSystem
                 TbxDate.Text = DateTime.Now.ToString("dd-MM-yyyy");
                 TbxSalePerson.Text = FlagsVariables.userId;
             }
+
+
+
         }
         protected void CNICTextChangeEvent(object sender, EventArgs e)
         {
@@ -122,5 +125,135 @@ namespace KarachiMotorSystem
             }
             return Sale;
         }
+
+        protected void BtnOPenCustomerMasterEvent(object sender, EventArgs e)
+        {
+            Response.Redirect("CustomerMaster.aspx");
         }
+
+        protected void BtnOpenStockMasterEvent(object sender, EventArgs e)
+        {
+            Response.Redirect("StockMaster.aspx");
+        }
+
+        protected void Save_event(object sender, EventArgs e)
+        {
+            string saleid = TbxSaleID.Text;
+            string saleperson = TbxSalePerson.Text;
+            string trade = trade_DropDownList.Text;
+            string date = TbxDate.Text;
+            string cnic = TbxCNIC.Text;
+            string regNo = TbxRegNo.Text;
+            string cust_name = TbxCustomerName.Text;
+            Int64 sal_amount =Convert.ToInt64( TbxSaleAmount.Text);
+            
+            if(sal_amount != 0 && trade != ""){
+
+            ConnectionStringClass conn = new ConnectionStringClass();
+            SqlConnection dataConn = conn.getDatabaseConnection();
+
+            string query = "insert into sale (saleID, salePerson, trade, date, saleAmount, CNIC, RegNo,customerName) values";
+            query += "('" + saleid + "','" + saleperson + "','" + trade + "','" + date + "','" + sal_amount + "','" + cnic + "','" + regNo + "','" + cust_name + "')";
+            SqlCommand myCommand = new SqlCommand(query, dataConn);
+            try
+            {
+                dataConn.Open();
+                myCommand.ExecuteNonQuery();
+                dataConn.Close();
+            }
+            catch (Exception)
+            {
+                string script = "alert(\" Data Not save !\");";
+                ScriptManager.RegisterStartupScript(this, GetType(),
+                                      "ServerControlScript", script, true);
+            }
+            }
+
+        }
+
+        protected void SalePageSearchEvent(object sender, EventArgs e)
+        {
+            string UInput = TbxSearch.Text;
+            string CName = "saleID";
+
+            this.GetSaleRecord(CName, UInput);
+        }
+
+        private void GetSaleRecord(string ColumnName, string Userinput)
+        {
+            if (Userinput != "")
+            {
+                ConnectionStringClass myConn = new ConnectionStringClass();
+               SqlConnection dbConnec = myConn.getDatabaseConnection();
+
+               string Query = "Select * from Sale Where "+ColumnName+" = "+ Userinput+"";
+               SqlCommand myCommand = new SqlCommand(Query, dbConnec);
+               SqlDataAdapter myAdapter = new SqlDataAdapter(myCommand);
+               DataTable myTable = new DataTable();
+               try
+               {
+                   myAdapter.Fill(myTable);
+                   dbConnec.Open();
+                   var record = myCommand.ExecuteScalar();
+                   if (record != null)
+                   {
+
+                       TbxSaleID.Text = myTable.Rows[0]["saleID"].ToString();
+                       TbxSalePerson.Text = myTable.Rows[0]["SalePerson"].ToString();
+                       trade_DropDownList.Text = myTable.Rows[0]["trade"].ToString();
+                       TbxDate.Text = myTable.Rows[0]["date"].ToString();
+                       TbxAmount.Text = myTable.Rows[0]["saleAmount"].ToString();
+                       TbxCNIC.Text = myTable.Rows[0]["CNIC"].ToString();
+                       TbxRegNo.Text = myTable.Rows[0]["RegNo"].ToString();
+                       TbxCustomerName.Text = myTable.Rows[0]["customerName"].ToString();
+                   }
+               }
+               catch (Exception)
+               {
+                   
+                   throw;
+               }
+
+            }
+        }
+
+        protected void SearchByCustomerCNICEvent(object sender, EventArgs e)
+        {
+            string UInput = TbxSearch.Text;
+            string CName = "CNIC";
+            this.GetSaleRecord(CName, UInput);
+        }
+
+        protected void SearchByVehicleStockNoEvent(object sender, EventArgs e)
+        {
+            string UInput = TbxSearch.Text;
+            string CName = "RegNo";
+            this.GetSaleRecord(CName, UInput);
+
+        }
+
+        protected void ClearButtonEvent(object sender, EventArgs e)
+        {
+            TbxCNIC.Text = "";
+            TbxCustomerID.Text = "";
+            TbxCustomerName.Text = "";
+            TbxCellNo.Text = "";
+            TbxEmail.Text = "";
+            TbxHomeAddress.Text = "";
+            TbxDriverNo.Text = "";
+            TbxRegNo.Text = "";
+            TbxStockID.Text = "";
+            TbxMake.Text = "";
+            TbxFrameNo.Text = "";
+            TbxEngineNo.Text = "";
+            TbxVariant.Text = "";
+            TbxAmount.Text = "";
+            TbxSaleID.Text = "";
+            trade_DropDownList.SelectedValue = "Select";
+            TbxSaleAmount.Text = "";
+            TbxSearch.Text = "";
+            string current = Convert.ToString(this.GetSaleID());
+            TbxSaleID.Text = current;
+        }
+    }
     }

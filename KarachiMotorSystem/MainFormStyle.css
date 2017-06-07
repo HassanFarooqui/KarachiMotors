@@ -45,7 +45,7 @@ table#CPH_GirdViewdiv tr:nth-child(even) {
 
 td {
     word-break: break-all;
-    text-align: right;
+    text-align: center;
 }
 
 .custom-tab {
