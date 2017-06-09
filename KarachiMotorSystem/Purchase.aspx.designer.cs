@@ -85,13 +85,13 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Label LblSaleID;
         
         /// <summary>
-        /// TbxSaleID control.
+        /// TbxPurchaseID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbxSaleID;
+        protected global::System.Web.UI.WebControls.TextBox TbxPurchaseID;
         
         /// <summary>
         /// LblCustomer control.
@@ -139,13 +139,13 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Label LblSalePerson;
         
         /// <summary>
-        /// TbxSalePerson control.
+        /// TbxPurchasePerson control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbxSalePerson;
+        protected global::System.Web.UI.WebControls.TextBox TbxPurchasePerson;
         
         /// <summary>
         /// LblCustomerName control.
@@ -193,13 +193,13 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Label LblTrade;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// ddnTrade control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList ddnTrade;
         
         /// <summary>
         /// LblCellNo control.
@@ -290,24 +290,6 @@ namespace KarachiMotorSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TbxEngineNo;
-        
-        /// <summary>
-        /// Label3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
-        
-        /// <summary>
-        /// TbxSaleAmount control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbxSaleAmount;
         
         /// <summary>
         /// LblHomeAddress control.
@@ -454,21 +436,21 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.Button BtnClear;
         
         /// <summary>
-        /// Button18 control.
+        /// BtnSearchByCnic control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button18;
+        protected global::System.Web.UI.WebControls.Button BtnSearchByCnic;
         
         /// <summary>
-        /// Button19 control.
+        /// BtnSearchByRegNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button19;
+        protected global::System.Web.UI.WebControls.Button BtnSearchByRegNo;
     }
 }

@@ -11,7 +11,7 @@
                     <asp:Label ID="LblstockID" runat="server" Text="Stock ID:"></asp:Label>
                 </td>
                 <td style="width: 215px; height: 26px; text-align: left;">
-                    <asp:TextBox ID="TbxStockID" runat="server" Width="167px" Enabled="False"></asp:TextBox>
+                    <asp:TextBox ID="TbxStockID" runat="server" Width="167px" Enabled="False" Height="30px"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right; height: 26px;">
                     <asp:Label ID="LblEngineType" runat="server" Text="Engine Type:"></asp:Label>
@@ -39,7 +39,7 @@
                     <asp:Label ID="LblRegNo" runat="server" Text="Reg No:"></asp:Label>
                 </td>
                 <td style="width: 215px; text-align: left;">
-                    <asp:TextBox ID="TbxRegNo" runat="server" Width="167px"></asp:TextBox>
+                    <asp:TextBox ID="TbxRegNo" runat="server" Width="167px" Height="40px"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblTransmissionType" runat="server" Text="Transmission Type:"></asp:Label>
@@ -68,7 +68,7 @@
                     <asp:Label ID="LblMake" runat="server" Text="Make:"></asp:Label>
                 </td>
                 <td style="width: 215px; text-align: left;">
-                    <asp:TextBox ID="TbxMake" runat="server" Width="167px"></asp:TextBox>
+                    <asp:TextBox ID="TbxMake" runat="server" Width="167px" Height="40px"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblPowerwWindows" runat="server" Text="Power Windows:"></asp:Label>
@@ -96,7 +96,7 @@
                     <asp:Label ID="LblFrameNo" runat="server" Text="Frame No:"></asp:Label>
                 </td>
                 <td style="width: 215px; text-align: left;">
-                    <asp:TextBox ID="TbxFrameNo" runat="server" Width="167px"></asp:TextBox>
+                    <asp:TextBox ID="TbxFrameNo" runat="server" Width="167px" Height="40px"></asp:TextBox>
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TbxFrameNo" ErrorMessage="*" ForeColor="Red" ValidationExpression="^[A-Z]{1,3}-\d{5}$"></asp:RegularExpressionValidator>
                 </td>
                 <td style="width: 156px; text-align: right;">
@@ -125,7 +125,7 @@
                     <asp:Label ID="LblEngineNo" runat="server" Text="Engine No:"></asp:Label>
                 </td>
                 <td style="width: 215px; text-align: left;">
-                    <asp:TextBox ID="TbxEngineNo" runat="server" Width="167px"></asp:TextBox>
+                    <asp:TextBox ID="TbxEngineNo" runat="server" Width="167px" Height="40px"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblstockID12" runat="server" Text="Cruise Controll:"></asp:Label>
@@ -154,7 +154,7 @@
                     <asp:Label ID="LblVariant" runat="server" Text="Variant:"></asp:Label>
                 </td>
                 <td style="width: 215px; text-align: left;">
-                    <asp:TextBox ID="TbxVariant" runat="server" Width="167px"></asp:TextBox>
+                    <asp:TextBox ID="TbxVariant" runat="server" Width="167px" Height="40px"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblstockID13" runat="server" Text="Air Condition:"></asp:Label>
@@ -178,7 +178,7 @@
                     <asp:Label ID="LblModelYear" runat="server" Text="Model Year:"></asp:Label>
                 </td>
                 <td style="width: 215px; text-align: left;">
-                    <asp:TextBox ID="TbxModelYear" runat="server" Width="167px"></asp:TextBox>
+                    <asp:TextBox ID="TbxModelYear" runat="server" Width="167px" Height="40px"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblstockID14" runat="server" Text="Radio:"></asp:Label>
@@ -196,7 +196,7 @@
                     <asp:Label ID="LblstockID6" runat="server" Text="Color:"></asp:Label>
                 </td>
                 <td style="width: 215px; text-align: left;">
-                    <asp:TextBox ID="TbxColor" runat="server" Width="167px"></asp:TextBox>
+                    <asp:TextBox ID="TbxColor" runat="server" Width="167px" Height="40px"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblstockID15" runat="server" Text="Player:"></asp:Label>

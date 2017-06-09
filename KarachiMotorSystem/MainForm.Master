@@ -38,63 +38,56 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="BtnHome" runat="server" Height="30px" Text="Home" Width="178px" OnClick="Home" />
+                    <asp:Button ID="BtnHome" runat="server" Height="90px" Text="Home" Width="178px" OnClick="Home" />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="BtnCustomerMaster" runat="server" Height="30px" Text="Customer Master" Width="178px" OnClick="CustomerMaster" />
+                    <asp:Button ID="BtnCustomerMaster" runat="server" Height="90px" Text="Customer Master" Width="178px" OnClick="CustomerMaster" />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="BtnStockMaster" runat="server" Height="30px" Text="Stock Master" Width="178px" OnClick="StockMasterClick" />
+                    <asp:Button ID="BtnStockMaster" runat="server" Height="90px" Text="Stock Master" Width="178px" OnClick="StockMasterClick" />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="BtnSale" runat="server" Height="30px" Text="Sale" Width="178px" OnClick="Sale" />
+                    <asp:Button ID="BtnSale" runat="server" Height="90px" Text="Sale" Width="178px" OnClick="Sale" />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="BtnPurchase" runat="server" Height="30px" Text="Purchase" Width="178px" OnClick="BtnPurchase_Click" />
+                    <asp:Button ID="BtnPurchase" runat="server" Height="90px" Text="Purchase" Width="178px" OnClick="BtnPurchase_Click" />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button6" runat="server" Height="30px" Text="Button" Width="178px" />
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button7" runat="server" Height="30px" Text="Button" Width="178px" />
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button8" runat="server" Height="30px" Text="Button" Width="178px" />
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button9" runat="server" Height="30px" Text="Button" Width="178px" />
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button10" runat="server" Height="30px" Text="Button" Width="178px" />
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Button ID="Button11" runat="server" Height="30px" Text="Button" Width="178px" />
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Button ID="Button12" runat="server" Height="30px" Text="Button" Width="178px" />
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>

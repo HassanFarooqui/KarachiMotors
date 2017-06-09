@@ -1,4 +1,4 @@
-﻿using System;
+﻿  using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -24,6 +24,7 @@ namespace KarachiMotorSystem
 
 
         }
+
         protected void CNICTextChangeEvent(object sender, EventArgs e)
         {
             string CNIC = TbxCNIC.Text;
@@ -222,6 +223,7 @@ namespace KarachiMotorSystem
 
             }
         }
+
         private void GetStockMasterRecord(string tableName, string ColumnName, string Userinput)
         {
             if (Userinput != "")
@@ -249,9 +251,7 @@ namespace KarachiMotorSystem
                         TbxFrameNo.Text = myTable.Rows[0]["FrameNo"].ToString();
                         TbxEngineNo.Text = myTable.Rows[0]["EngineNo"].ToString();
                         TbxVariant.Text = myTable.Rows[0]["Variant"].ToString();
-                        TbxAmount.Text = myTable.Rows[0]["Other"].ToString();
-                        
-
+                        TbxAmount.Text = myTable.Rows[0]["Other"].ToString();                  
                     }
                 }
                 catch (Exception ex)
@@ -262,6 +262,7 @@ namespace KarachiMotorSystem
 
             }
         }
+
         private void GetCustomerRecord(string tableName, string ColumnName, string Userinput)
         {
             if (Userinput != "")
@@ -300,6 +301,7 @@ namespace KarachiMotorSystem
 
             }
         }
+
         protected void SearchByCustomerCNICEvent(object sender, EventArgs e)
         {
             string UInput = TbxSearch.Text;
