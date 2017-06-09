@@ -13,14 +13,14 @@
                     <asp:Label ID="LblCNIC" runat="server" Text="CNIC :"></asp:Label>
                 </td>
                 <td style="width: 227px; text-align: left">
-                    <asp:TextBox ID="TbxCNIC" runat="server" Height="25px" Width="186px" AutoPostBack="True" OnTextChanged="CNICTextChangeEvent"></asp:TextBox>
+                    <asp:TextBox ID="TbxCNIC" runat="server" Height="25px" Width="186px" PlaceHolder="00000-0000000-0"   AutoPostBack ="True" OnTextChanged="CNICTextChangeEvent"></asp:TextBox>
                     <asp:Button ID="BtnOPenCustomerPage" runat="server" OnClick="BtnOPenCustomerMasterEvent" Text="*" Width="28px" />
                 </td>
                 <td style="width: 157px; text-align: right;">
                     <asp:Label ID="LblRegNo" runat="server" Text="Reg # :"></asp:Label>
                 </td>
                 <td style="text-align: left; width: 246px">
-                    <asp:TextBox ID="TbxRegNo" runat="server" Height="25px" Width="186px" AutoPostBack="True" OnTextChanged="RegistrationTextchangeEvent"></asp:TextBox>
+                    <asp:TextBox ID="TbxRegNo" runat="server" Height="25px" Width="186px" PlaceHolder="XXX-000"  AutoPostBack="True" OnTextChanged="RegistrationTextchangeEvent"></asp:TextBox>
                     <asp:Button ID="BtnOPenCustomerPAge0" runat="server" OnClick="BtnOpenStockMasterEvent" Text="*" Width="28px" />
                 </td>
                 <td style="width: 144px; text-align: right;">

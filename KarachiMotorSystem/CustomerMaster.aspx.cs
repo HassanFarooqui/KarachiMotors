@@ -213,7 +213,6 @@ namespace KarachiMotorSystem
             Response.Redirect("HomePage.aspx");
         }
 
-
         private int getCustomerID() {
             int customer = 0;
             ConnectionStringClass myConnection = new ConnectionStringClass();

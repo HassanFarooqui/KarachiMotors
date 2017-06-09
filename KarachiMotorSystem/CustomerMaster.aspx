@@ -132,7 +132,7 @@
                     <asp:Label ID="Label18" runat="server" Text="C.N.I.C:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TbxCNIC" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TbxCNIC" PlaceHolder="00000-0000000-0"  runat="server"></asp:TextBox>
                 </td>
                 <td>
                     <asp:Label ID="Label19" runat="server" Text="HPA Sales:"></asp:Label>
@@ -153,7 +153,7 @@
                     <asp:Label ID="Label20" runat="server" Text="Residential #:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TbxResidentialNo" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TbxResidentialNo" PlaceHolder="000-00000000"  runat="server"></asp:TextBox>
                 </td>
                 <td>
                     <asp:Label ID="Label21" runat="server" Text="Office #:"></asp:Label>
@@ -165,7 +165,7 @@
                     <asp:Label ID="Label22" runat="server" Text="Cell #:"></asp:Label>
                 </td>
                 <td colspan="2">
-                    <asp:TextBox ID="TbxCellNo1" runat="server" Width="227px"></asp:TextBox>
+                    <asp:TextBox ID="TbxCellNo1" PlaceHolder="0000-0000000"  runat="server" Width="227px"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>

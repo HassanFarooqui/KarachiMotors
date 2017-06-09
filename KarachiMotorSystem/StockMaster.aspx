@@ -11,13 +11,13 @@
                     <asp:Label ID="LblstockID" runat="server" Text="Stock ID:"></asp:Label>
                 </td>
                 <td style="width: 215px; height: 26px; text-align: left;">
-                    <asp:TextBox ID="TbxStockID" runat="server" Width="167px" Enabled="False" Height="30px"></asp:TextBox>
+                    <asp:TextBox ID="TbxStockID" runat="server" Width="167px" Enabled="False" Height="28px"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right; height: 26px;">
                     <asp:Label ID="LblEngineType" runat="server" Text="Engine Type:"></asp:Label>
                 </td>
                 <td style="width: 209px; height: 26px; text-align: left;">
-                    <asp:DropDownList ID="DdnEnginetype" runat="server" Height="21px" Width="153px" style="margin-left: 0px">
+                    <asp:DropDownList ID="DdnEnginetype" runat="server" Height="35px" Width="153px" style="margin-left: 0px">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>4 Cylinder</asp:ListItem>
                         <asp:ListItem>6 Cylinder</asp:ListItem>
@@ -27,7 +27,7 @@
                     <asp:Label ID="LblEngineType0" runat="server" Text="Sun Roof:"></asp:Label>
                 </td>
                 <td style="height: 26px">
-                    <asp:DropDownList ID="DdnSunRoof" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                    <asp:DropDownList ID="DdnSunRoof" runat="server" Height="35px" style="margin-left: 0px" Width="155px">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
@@ -39,13 +39,13 @@
                     <asp:Label ID="LblRegNo" runat="server" Text="Reg No:"></asp:Label>
                 </td>
                 <td style="width: 215px; text-align: left;">
-                    <asp:TextBox ID="TbxRegNo" runat="server" Width="167px" Height="40px"></asp:TextBox>
+                    <asp:TextBox ID="TbxRegNo" runat="server" Width="167px" Height="28px"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblTransmissionType" runat="server" Text="Transmission Type:"></asp:Label>
                 </td>
                 <td style="width: 209px; text-align: left;">
-                    <asp:DropDownList ID="DdnTransmissionType" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                    <asp:DropDownList ID="DdnTransmissionType" runat="server" Height="35px" style="margin-left: 0px" Width="155px">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Automatic</asp:ListItem>
                         <asp:ListItem>Manual</asp:ListItem>
@@ -56,7 +56,7 @@
                     <asp:Label ID="LblEngineType1" runat="server" Text="Wheel Cover:"></asp:Label>
                 </td>
                 <td>
-                    <asp:DropDownList ID="DdnWheelCover" runat="server" Height="20px" style="margin-left: 0px" Width="155px" >
+                    <asp:DropDownList ID="DdnWheelCover" runat="server" Height="35px" style="margin-left: 0px" Width="155px" >
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
@@ -68,13 +68,13 @@
                     <asp:Label ID="LblMake" runat="server" Text="Make:"></asp:Label>
                 </td>
                 <td style="width: 215px; text-align: left;">
-                    <asp:TextBox ID="TbxMake" runat="server" Width="167px" Height="40px"></asp:TextBox>
+                    <asp:TextBox ID="TbxMake" runat="server" Width="167px" Height="28px"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblPowerwWindows" runat="server" Text="Power Windows:"></asp:Label>
                 </td>
                 <td style="width: 209px; text-align: left;">
-                    <asp:DropDownList ID="DdnPowerWindow" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                    <asp:DropDownList ID="DdnPowerWindow" runat="server" Height="35px" style="margin-left: 0px" Width="155px">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
@@ -84,7 +84,7 @@
                     <asp:Label ID="LblEngineType2" runat="server" Text="Wheel Chrome:"></asp:Label>
                 </td>
                 <td>
-                    <asp:DropDownList ID="DdnWheelChrome" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                    <asp:DropDownList ID="DdnWheelChrome" runat="server" Height="35px" style="margin-left: 0px" Width="155px">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
@@ -96,14 +96,14 @@
                     <asp:Label ID="LblFrameNo" runat="server" Text="Frame No:"></asp:Label>
                 </td>
                 <td style="width: 215px; text-align: left;">
-                    <asp:TextBox ID="TbxFrameNo" runat="server" Width="167px" Height="40px"></asp:TextBox>
+                    <asp:TextBox ID="TbxFrameNo" runat="server" Width="167px" Height="28px"></asp:TextBox>
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TbxFrameNo" ErrorMessage="*" ForeColor="Red" ValidationExpression="^[A-Z]{1,3}-\d{5}$"></asp:RegularExpressionValidator>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblstockID11" runat="server" Text="Power Lock:"></asp:Label>
                 </td>
                 <td style="width: 209px; text-align: left;">
-                    <asp:DropDownList ID="DdnPowerLock" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                    <asp:DropDownList ID="DdnPowerLock" runat="server" Height="35px" style="margin-left: 0px" Width="155px">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
@@ -113,7 +113,7 @@
                     <asp:Label ID="DdnwheelAluminum" runat="server" Text="Wheel Aluminum:"></asp:Label>
                 </td>
                 <td>
-                    <asp:DropDownList ID="DdnWheelAluminium" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                    <asp:DropDownList ID="DdnWheelAluminium" runat="server" Height="35px" style="margin-left: 0px" Width="155px">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
@@ -125,13 +125,13 @@
                     <asp:Label ID="LblEngineNo" runat="server" Text="Engine No:"></asp:Label>
                 </td>
                 <td style="width: 215px; text-align: left;">
-                    <asp:TextBox ID="TbxEngineNo" runat="server" Width="167px" Height="40px"></asp:TextBox>
+                    <asp:TextBox ID="TbxEngineNo" runat="server" Width="167px" Height="28px"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblstockID12" runat="server" Text="Cruise Controll:"></asp:Label>
                 </td>
                 <td style="width: 209px; text-align: left;">
-                    <asp:DropDownList ID="DdnCruiseControl" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                    <asp:DropDownList ID="DdnCruiseControl" runat="server" Height="35px" style="margin-left: 0px" Width="155px">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
@@ -141,7 +141,7 @@
                     <asp:Label ID="LblEngineType4" runat="server" Text="Type:"></asp:Label>
                 </td>
                 <td>
-                    <asp:DropDownList ID="DdnType" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                    <asp:DropDownList ID="DdnType" runat="server" Height="35px" style="margin-left: 0px" Width="155px">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Trade</asp:ListItem>
                         <asp:ListItem>Purchase</asp:ListItem>
@@ -154,13 +154,13 @@
                     <asp:Label ID="LblVariant" runat="server" Text="Variant:"></asp:Label>
                 </td>
                 <td style="width: 215px; text-align: left;">
-                    <asp:TextBox ID="TbxVariant" runat="server" Width="167px" Height="40px"></asp:TextBox>
+                    <asp:TextBox ID="TbxVariant" runat="server" Width="167px" Height="28px"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblstockID13" runat="server" Text="Air Condition:"></asp:Label>
                 </td>
                 <td style="width: 209px; text-align: left;">
-                    <asp:DropDownList ID="DdnAirCondition" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                    <asp:DropDownList ID="DdnAirCondition" runat="server" Height="35px" style="margin-left: 0px" Width="155px">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
@@ -178,13 +178,13 @@
                     <asp:Label ID="LblModelYear" runat="server" Text="Model Year:"></asp:Label>
                 </td>
                 <td style="width: 215px; text-align: left;">
-                    <asp:TextBox ID="TbxModelYear" runat="server" Width="167px" Height="40px"></asp:TextBox>
+                    <asp:TextBox ID="TbxModelYear" runat="server" Width="167px" Height="28px"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblstockID14" runat="server" Text="Radio:"></asp:Label>
                 </td>
                 <td style="width: 209px; text-align: left;">
-                    <asp:DropDownList ID="DdnRadio" runat="server" Height="20px" style="margin-left: 0px" Width="155px">
+                    <asp:DropDownList ID="DdnRadio" runat="server" Height="35px" style="margin-left: 0px" Width="155px">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Yes</asp:ListItem>
                         <asp:ListItem>No</asp:ListItem>
@@ -196,13 +196,13 @@
                     <asp:Label ID="LblstockID6" runat="server" Text="Color:"></asp:Label>
                 </td>
                 <td style="width: 215px; text-align: left;">
-                    <asp:TextBox ID="TbxColor" runat="server" Width="167px" Height="40px"></asp:TextBox>
+                    <asp:TextBox ID="TbxColor" runat="server" Width="167px" Height="28px"></asp:TextBox>
                 </td>
                 <td style="width: 156px; text-align: right;">
                     <asp:Label ID="LblstockID15" runat="server" Text="Player:"></asp:Label>
                 </td>
                 <td style="width: 209px; text-align: left;">
-                    <asp:DropDownList ID="DdnPlayer" runat="server" Height="21px" style="margin-left: 0px" Width="156px">
+                    <asp:DropDownList ID="DdnPlayer" runat="server" Height="35px" style="margin-left: 0px" Width="156px">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>DVD Player</asp:ListItem>
                         <asp:ListItem>F/M </asp:ListItem>
