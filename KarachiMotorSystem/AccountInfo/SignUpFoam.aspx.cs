@@ -14,8 +14,8 @@ namespace KarachiMotorSystem
         protected void Page_Load(object sender, EventArgs e)
         {
 
-           
         }
+
         protected void CreateAccount(object sender, EventArgs e)
 
         {
@@ -55,30 +55,6 @@ namespace KarachiMotorSystem
         protected void mailRadioButton_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-        }
-
-        protected void ShowHideclickEvent(object sender, EventArgs e)
-        {    
-            if (this.BtnSearchHide.Text == "Show")
-            {
-                this.BtnSearchHide.Text = "Hide";
-                string b = Txtpassword.Text;
-                string c = TxtConformpassword.Text;
-                Txtpassword.TextMode = TextBoxMode.SingleLine;
-                TxtConformpassword.TextMode = TextBoxMode.SingleLine;
-                Txtpassword.Text = b;
-                TxtConformpassword.Text = c;
-            }
-            else
-            { 
-                this.BtnSearchHide.Text = "Show";
-                string d = Txtpassword.Text;
-                string f = TxtConformpassword.Text;
-                Txtpassword.Text = d;
-                TxtConformpassword.Text = f;
-                Txtpassword.Attributes["type"] = "password";
-                TxtConformpassword.Attributes["type"] = "password";
-            }
         }
     }
 }

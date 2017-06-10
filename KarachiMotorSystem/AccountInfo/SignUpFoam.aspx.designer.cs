@@ -76,15 +76,6 @@ namespace KarachiMotorSystem {
         protected global::System.Web.UI.WebControls.TextBox TxtConformpassword;
         
         /// <summary>
-        /// BtnSearchHide control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSearchHide;
-        
-        /// <summary>
         /// TxtEmailAddress control.
         /// </summary>
         /// <remarks>

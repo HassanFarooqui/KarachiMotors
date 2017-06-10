@@ -60,7 +60,7 @@
             </tr>
             <tr>
                 <td class="auto-style4"> 
-                    <asp:TextBox runat="server" ID="TbxFirstName" Height="31px" Width="230px" PlaceHolder="First Name" ControlToValidate="TbxFirstName" /><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" ControlToValidate="TbxFirstName" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:TextBox runat="server" ID="TbxFirstName" Height="31px" Width="230px" PlaceHolder="First Name" ControlToValidate="TbxFirstName" /><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" ControlToValidate="TbxFirstName"></asp:RequiredFieldValidator>
 
                 </td>
                 <td> 
@@ -71,12 +71,8 @@
                 <td class="auto-style6"> 
                     <asp:TextBox runat="server" ID="Txtpassword" Height="31px" Width="230px" PlaceHolder="Password" TextMode="Password"/>
                 </td>
-
- 
                 <td class="auto-style7"> 
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                     <asp:TextBox runat="server" ID="TxtConformpassword" Height="31px" Width="230px" PlaceHolder="Confirm Password" TextMode="Password"/>
-                    <asp:Button ID="BtnSearchHide" runat="server" OnClick="ShowHideclickEvent" Text="Show" />
                 </td>
             </tr>
             <tr>
