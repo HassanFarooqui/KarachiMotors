@@ -235,5 +235,10 @@ namespace KarachiMotorSystem
 
             return customer;
         }
+
+        protected void printalldata(object sender, EventArgs e)
+        {
+            Response.Redirect("MyReport.aspx");
+        }
     }
 }

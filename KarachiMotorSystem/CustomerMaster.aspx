@@ -22,7 +22,7 @@
                     <asp:Button ID="BtnDeleteB" runat="server" Text="Delete" Width="80px" OnClick="BtnDelete" />
                 </td>
                 <td>
-                    <asp:Button ID="BtnPrint" runat="server" Text="Print" Width="80px" />
+                    <asp:Button ID="BtnPrint" runat="server" Text="Print" Width="80px" OnClick="printalldata" />
                 </td>
                 <td style="width: 49px">&nbsp;</td>
                 <td>
@@ -126,13 +126,14 @@
                     <asp:Label ID="Label17" runat="server" Text="D.O.B:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TbxDOB" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TbxDOB" PlaceHolder="dd-mm-yyyy" runat="server"></asp:TextBox>
                 </td>
                 <td>
                     <asp:Label ID="Label18" runat="server" Text="C.N.I.C:"></asp:Label>
                 </td>
                 <td>
                     <asp:TextBox ID="TbxCNIC" PlaceHolder="00000-0000000-0"  runat="server"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TbxCNIC" ErrorMessage="*" ForeColor="Red" ValidationExpression="^\d{5}-\d{7}-\d{1}$"></asp:RegularExpressionValidator>
                 </td>
                 <td>
                     <asp:Label ID="Label19" runat="server" Text="HPA Sales:"></asp:Label>
@@ -153,19 +154,22 @@
                     <asp:Label ID="Label20" runat="server" Text="Residential #:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TbxResidentialNo" PlaceHolder="000-00000000"  runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TbxResidentialNo" PlaceHolder="021-3xxxxxxx"  runat="server"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TbxResidentialNo" ErrorMessage="*" ForeColor="Red" ValidationExpression="^\d{3}-3\d{7}$"></asp:RegularExpressionValidator>
                 </td>
                 <td>
                     <asp:Label ID="Label21" runat="server" Text="Office #:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TbxOfficeNo" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TbxOfficeNo" PlaceHolder="021-3xxxxxxx"  runat="server"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TbxOfficeNo" ErrorMessage="*" ForeColor="Red" ValidationExpression="^\d{3}-3\d{7}$"></asp:RegularExpressionValidator>
                 </td>
                 <td>
                     <asp:Label ID="Label22" runat="server" Text="Cell #:"></asp:Label>
                 </td>
                 <td colspan="2">
-                    <asp:TextBox ID="TbxCellNo1" PlaceHolder="0000-0000000"  runat="server" Width="227px"></asp:TextBox>
+                    <asp:TextBox ID="TbxCellNo1" PlaceHolder="0300-2589654"  runat="server" Width="227px"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="TbxCellNo1" ErrorMessage="*" ForeColor="Red" ValidationExpression="^\d{4}-\d{7}$"></asp:RegularExpressionValidator>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -175,13 +179,15 @@
                     <asp:Label ID="Label23" runat="server" Text="Driver #:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TbxDriverNo" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TbxDriverNo" PlaceHolder="0300-xxxxxxx" runat="server"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="TbxDriverNo" ErrorMessage="*" ForeColor="Red" ValidationExpression="^\d{4}-\d{7}$"></asp:RegularExpressionValidator>
                 </td>
                 <td>
                     <asp:Label ID="Label24" runat="server" Text="Email Address:"></asp:Label>
                 </td>
                 <td>
                     <asp:TextBox ID="TbxEmailAddress" runat="server"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="TbxEmailAddress" ErrorMessage="*" ForeColor="Red" ValidationExpression="^(?(&quot;&quot;)(&quot;&quot;.+?&quot;&quot;@)|(([0-9a-zA-Z]((\.(?!\.))|[-!#\$%&amp;'\*\+/=\?\^`\{\}\|~\w])*)(?&lt;=[0-9a-zA-Z])@))(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,6}))$"></asp:RegularExpressionValidator>
                 </td>
                 <td>
                     <asp:Label ID="Label25" runat="server" Text="H Address:"></asp:Label>
@@ -202,7 +208,8 @@
                     <asp:Label ID="Label26" runat="server" Text="N.T.N #:"></asp:Label>
                 </td>
                 <td style="height: 26px">
-                    <asp:TextBox ID="TbxNTNNo" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TbxNTNNo" PlaceHolder="00000-0000000-0" runat="server"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToValidate="TbxNTNNo" ErrorMessage="*" ForeColor="Red" ValidationExpression="^\d{5}-\d{7}-\d{1}$"></asp:RegularExpressionValidator>
                 </td>
                 <td style="height: 26px">
                     <asp:Label ID="Label27" runat="server" Text="Customer Type:"></asp:Label>

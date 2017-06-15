@@ -66,18 +66,17 @@ namespace KarachiMotorSystem
                 string c = TxtConformpassword.Text;
                 Txtpassword.TextMode = TextBoxMode.SingleLine;
                 TxtConformpassword.TextMode = TextBoxMode.SingleLine;
-                Txtpassword.Text = b;
-                TxtConformpassword.Text = c;
+               
             }
             else
             { 
                 this.BtnSearchHide.Text = "Show";
                 string d = Txtpassword.Text;
                 string f = TxtConformpassword.Text;
-                Txtpassword.Text = d;
-                TxtConformpassword.Text = f;
                 Txtpassword.Attributes["type"] = "password";
                 TxtConformpassword.Attributes["type"] = "password";
+                Txtpassword.Text = d;
+                TxtConformpassword.Text = f;
             }
         }
     }
